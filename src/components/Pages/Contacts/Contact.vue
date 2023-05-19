@@ -1,10 +1,18 @@
 <template>
   <div class="content">
-    <h1>Contact</h1>
+    <ContactForm />
   </div>
 </template>
 
 <script>
+import ContactForm from './Form.vue'
+import Loader from '../../UI/UX/Loader.vue'
+export default {
+components: {
+    ContactForm,
+    Loader
+  }
+}
 </script>
 
 <style scoped>
