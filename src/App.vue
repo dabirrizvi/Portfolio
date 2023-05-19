@@ -5,8 +5,6 @@
 
 <script setup>
 import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
-import { ref } from "vue";
-const theme = ref("light");
 </script>
 
 <style lang="scss">
