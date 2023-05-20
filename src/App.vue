@@ -8,24 +8,18 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
 </script>
 
 <style lang="scss">
-
+#app{
+  background: #fff3e2;
+}
+.routing{
+  text-decoration: none;
+  color: black;
+}
 * {
   margin: 0;
   padding: 0rem;
   box-sizing: border-box;
   font-family: "Fira sans", sans-serif;
-}
-
-// Routing Animation
-.route-enter-active,
-.route-leave-active {
-  transition: opacity 0.35s ease-in;
-}
-
-.route-enter-from,
-.route-leave-to {
-  opacity: 0;
-  transform: scale(0.5) ease-out;
 }
 
 // content
