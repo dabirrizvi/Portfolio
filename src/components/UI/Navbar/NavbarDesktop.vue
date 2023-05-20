@@ -29,15 +29,31 @@
     </div>
     <!-- router animation -->
     <router-view v-slot="slotProps">
-        <transition name="route" mode="out-in">
-            <component :is="slotProps.Component"> </component>
-        </transition>
-    </router-view>
+  <transition name="route" mode="out-in" @before-enter="beforeEnter" @enter="enter" @leave="leave">
+    <component :is="slotProps.Component"></component>
+  </transition>
+</router-view>
 </template>
 
 <script>
 export default {
-
+    methods: {
+        beforeEnter(el) {
+      el.style.opacity = 0;
+    },
+    enter(el, done) {  
+      setTimeout(() => {
+        el.style.transition = 'opacity 0.3s ease-in';
+        el.style.opacity = 1;
+        el.addEventListener('transitionend', done);
+      }, 0);
+    },
+    leave(el, done) {
+      el.style.transition = 'opacity 0.3s ease-in';
+      el.style.opacity = 0;
+      el.addEventListener('transitionend', done);
+    },
+  },
 }
 </script>
 
@@ -50,5 +66,6 @@ export default {
 
 .desktop-header-row {
     max-width: 1200px;
+    padding: 20px 0px 20px 0px;
 }
 </style>
