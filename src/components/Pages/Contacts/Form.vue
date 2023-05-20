@@ -1,7 +1,7 @@
 <template>
     <h2>Contact Form</h2>
-    <base-card>
-        <section>
+
+        <section class="card">
             <form @submit.prevent="submitSurvey">
                 <div class="form-control">
                     <label for="name">Your Name</label>
@@ -23,11 +23,11 @@
                 <p v-if="invalidInput">One or more input fields are invalid. Please check your provided data.</p>
                 <p v-if="error">{{ error }}</p>
                 <div>
-                    <button>Submit</button>
+                    <button>Button</button>
                 </div>
             </form>
         </section>
-    </base-card>
+
 </template>
 
 <script>
