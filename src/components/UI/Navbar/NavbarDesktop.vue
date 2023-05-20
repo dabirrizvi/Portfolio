@@ -35,26 +35,24 @@
 </router-view>
 </template>
 
-<script>
-export default {
-    methods: {
-        beforeEnter(el) {
+<script setup>
+const beforeEnter = (el) => {
       el.style.opacity = 0;
-    },
-    enter(el, done) {  
+    };
+
+    const enter = (el, done) => {
       setTimeout(() => {
         el.style.transition = 'opacity 0.3s ease-in';
         el.style.opacity = 1;
         el.addEventListener('transitionend', done);
       }, 0);
-    },
-    leave(el, done) {
+    };
+
+    const leave = (el, done) => {
       el.style.transition = 'opacity 0.3s ease-in';
       el.style.opacity = 0;
       el.addEventListener('transitionend', done);
-    },
-  },
-}
+    };
 </script>
 
 <style lang="scss">

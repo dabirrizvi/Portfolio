@@ -45,10 +45,10 @@
     </aside>
     <!-- router animation -->
     <router-view v-slot="slotProps">
-        <transition name="route" mode="out-in">
-            <component :is="slotProps.Component"> </component>
-        </transition>
-    </router-view>
+  <transition name="route" mode="out-in" @before-enter="beforeEnter" @enter="enter" @leave="leave">
+    <component :is="slotProps.Component"></component>
+  </transition>
+</router-view>
 </template>
 
 <script setup>
@@ -59,6 +59,23 @@ const ToggleMenu = () => {
     is_expanded.value = !is_expanded.value;
     localStorage.setItem("is_expanded", is_expanded.value);
 };
+const beforeEnter = (el) => {
+      el.style.opacity = 0;
+    };
+
+    const enter = (el, done) => {
+      setTimeout(() => {
+        el.style.transition = 'opacity 0.3s ease-in';
+        el.style.opacity = 1;
+        el.addEventListener('transitionend', done);
+      }, 0);
+    };
+
+    const leave = (el, done) => {
+      el.style.transition = 'opacity 0.3s ease-in';
+      el.style.opacity = 0;
+      el.addEventListener('transitionend', done);
+    };
 </script>
 
 <style lang="scss">
@@ -201,7 +218,6 @@ aside {
 
     &.is-expanded {
         width: var(--sidebar-width);
-
         .menu-toggle-wrap {
             top: -2.7rem;
 
