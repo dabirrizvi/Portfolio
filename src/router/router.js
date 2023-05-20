@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import LaunchScreen from '../components/UI/UX/LaunchScreen.vue'
 import Home from '../components/Pages/Home/Home.vue'
 import Projects from '../components/Pages/Projects/Project.vue'
 import Certifcates from '../components/Pages/Certificates/Certificates.vue'
@@ -11,7 +12,7 @@ import NotFound from '../components/Pages/404.vue'
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path: '/', redirect: '/home' },
+        { path: '/', component: LaunchScreen },
         { path: '/home', component: Home },
         { path: '/projects', component: Projects},
         { path: '/certificates', component: Certifcates},
