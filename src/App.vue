@@ -8,9 +8,23 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
 </script>
 
 <style lang="scss">
+// To create parallax effect
 #app{
-  background: #fff3e2;
+  background-image: url('./assets/background.jpg');
+   /* Full height */
+   height: fit-content; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+// section - background colours
+.container-section:nth-child(even) {
+  background: #ffd4a9;
+}
+
+// Headers
 .routing{
   text-decoration: none;
   color: black;
