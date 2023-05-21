@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import LaunchScreen from '../components/UI/UX/LaunchScreen.vue'
+import LaunchScreen from '../components/UI/LoadingScreen/LaunchScreen.vue'
 import Home from '../components/Pages/Home/Home.vue'
 import Projects from '../components/Pages/Projects/Project.vue'
 import Certifcates from '../components/Pages/Certificates/Certificates.vue'
