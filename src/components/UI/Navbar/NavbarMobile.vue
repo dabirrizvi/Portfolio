@@ -18,7 +18,7 @@
         <!-- Sidebar Content -->
         <div class="menu">
             <div class="text">
-                <h3 style="text-align: center">MENU</h3>
+                <h3 style="text-align: center">Menu</h3>
             </div>
             <!-- Router Link to different pages-->
 
@@ -81,11 +81,11 @@ const beforeEnter = (el) => {
 <style lang="scss">
 // Sidebar Colours
 :root {
-    --primary: #ffb703;
-    --dark: #1e293b;
+    --primary: #f6704a;
     --dark-alt: #334155;
-    --light: #334155;
+    --buttons: #334155;
     --sidebar-width: 320px;
+    --selected-menu: #fbe8d7
 }
 
 button {
@@ -98,7 +98,7 @@ button {
 
 //  Arrow
 .fa-forward {
-    color: var(--light);
+    color: var(--buttons);
     display: flex;
     font-size: 1.5rem;
 }
@@ -106,7 +106,7 @@ button {
 aside {
     display: flex;
     flex-direction: column;
-    color: var(--light);
+    color: var(--buttons);
     width: calc(2rem + 30px);
     overflow: hidden;
     min-height: 145vh;
@@ -136,7 +136,7 @@ aside {
 
             .material-icons {
                 font-size: 2rem;
-                color: var(--light);
+                color: var(--buttons);
                 transition: 0.8s ease-out;
             }
 
@@ -168,7 +168,6 @@ aside {
     h3 {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
-        text-transform: uppercase;
     }
 
     .menu {
@@ -183,13 +182,13 @@ aside {
 
             .material-icons {
                 font-size: 2rem;
-                color: var(--light);
+                color: var(--buttons);
                 transition: 0.8s ease-in-out;
                 padding: 0rem;
             }
 
             .text {
-                color: var(--light);
+                color: var(--buttons);
                 transition: 0.8s ease-in-out;
                 padding-left: 1.5rem;
             }
@@ -210,7 +209,7 @@ aside {
 
                 .material-icons,
                 .text {
-                    color: var(--primary);
+                    color: var(--selected-menu);
                 }
             }
         }
@@ -254,6 +253,6 @@ aside {
 
 // Theme
 aside {
-    background: linear-gradient(to top, #ffe8d6, #ffe8d6);
+    background: linear-gradient(to top, #d8f3d4, #d8f3d4);
 }
 </style>
