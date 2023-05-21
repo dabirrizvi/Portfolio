@@ -49,7 +49,7 @@ export default {
 .template-section {
   display: flex;
   justify-content: space-evenly;
-  height: auto;
+  min-height: 100vh;
   overflow: hidden;
 }
 

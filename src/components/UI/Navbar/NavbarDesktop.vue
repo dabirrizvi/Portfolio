@@ -23,9 +23,20 @@
     </div>
     <div class="desktop-navbars">
       <!-- Socials -->
-      <span><i class="fab fa-linkedin social-links"></i></span>
-      <span><i class="fas fa-phone-volume social-links"></i></span>
-      <span><i class="fas fa-envelope social-links"></i></span>
+      <span>
+        <a href="https://www.linkedin.com/in/dabir-hasan-rizvi-738a83185/" target="_blank">
+          <i class="fab fa-linkedin social-links"></i>
+        </a>
+      </span>
+      <span>
+        <a href="tel:+44(0)07737 906374" target="_blank">
+          <i class="fas fa-phone-volume social-links"></i>
+        </a>
+      </span>
+      <span>
+        <a :href="mailLink" target="_blank">
+          <i class="fas fa-envelope social-links"></i>
+        </a></span>
     </div>
   </div>
   <!-- router animation -->
@@ -37,6 +48,15 @@
 </template>
 
 <script setup>
+import { ref, computed } from 'vue';
+// for email
+const email = ref('dabir.rizvi@gmail.com');
+const subject = ref('Get in touch');
+const mailLink = computed(() => {
+  const encodedSubject = encodeURIComponent(subject.value);
+  return `mailto:${email.value}?subject=${encodedSubject}`;
+});
+// routing animation
 const beforeEnter = (el) => {
   el.style.opacity = 0;
 };
@@ -57,7 +77,6 @@ const leave = (el, done) => {
 </script>
 
 <style lang="scss">
-
 .desktop-header {
   max-width: 1200px;
   margin: auto;
@@ -107,7 +126,8 @@ const leave = (el, done) => {
   transition: color 0.3s;
 }
 
-.social-links:hover, .logo:hover {
-  color: rgba(227,185,64,255);
+.social-links:hover,
+.logo:hover {
+  color: rgba(227, 185, 64, 255);
 }
 </style>
