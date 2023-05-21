@@ -1,36 +1,46 @@
 <template>
-  <div>
-    <!-- Template with image first and description second -->
-    <image-description
-      :guideImageAos="'slide-up'"
-      guideImage="https://res.cloudinary.com/dsderm9xw/image/upload/v1622028057/3D%20Illustrations/3d-illustration1_j06j0a.png"
-      guideImageAlt="3d illustration of boy with laptop sitting"
-    >
-      <template v-slot:description>
-        <div style="padding: 50px;">
-        <h1>About Me</h1>
-        <div>Find things about me. Test. Test. Test. Test.</div>
-      </div>
-      </template>
-    </image-description>
-
-    <!-- Template with description first and image second -->
-    <description-image
-      :guideDescriptionAos="'slide-down'"
-      :guideImageAos="'slide-up'"
-      guideImage="https://res.cloudinary.com/dsderm9xw/image/upload/v1622028057/3D%20Illustrations/3d-illustration1_j06j0a.png"
-      guideImageAlt="3d illustration of boy with laptop sitting"
-    >
-      <template v-slot:description>
-        <h1>Plan Your Day Ahead</h1>
-        <div>
-          If you have one, follow the schedule provided by your school. If you just have a list of things to study, break it down into small tasks and plan to do the hardest ones when you have the most energy.
-        </div>
-      </template>
-    </description-image>
-  </div>
-</template>
-
-<script>
-
-</script>
+    <div>
+      <two-columns
+        :firstDescriptionClass="'col-6'"
+        :firstDescriptionAos="'fade-right'"
+        :secondDescriptionClass="'col-6'"
+        :secondDescriptionAos="'fade-left'"
+      >
+        <template v-slot:firstDescription>
+          <div>
+            <h1>About Me</h1>
+            <div>Find things about me. Test. Test. Test. Test.</div>
+          </div>
+        </template>
+  
+        <template v-slot:secondDescription>
+          <h1>Test Heading</h1>
+          <div>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptatibus amet tempora nisi veniam explicabo quasi officia, aliquam quam hic aperiam tempore dignissimos voluptatem, maxime sint at commodi similique dolor.        </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fuga dicta explicabo earum, nam soluta tempora quos consectetur, expedita, nemo reprehenderit eos ea nesciunt neque odio? Iste asperiores sit molestias?</p>
+        </template>
+      </two-columns>
+  
+      <two-columns
+        :firstDescriptionClass="'col-4'"
+        :firstDescriptionAos="'slide-up'"
+        :secondDescriptionClass="'col-8'"
+        :secondDescriptionAos="'slide-down'"
+      >
+        <template v-slot:firstDescription>
+          <div>
+            <h1>Services</h1>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ratione eius nisi est, nam nobis quibusdam dignissimos vitae, laudantium aut, harum quam natus porro alias obcaecati sunt. Velit, ad recusandae?</div>
+          </div>
+        </template>
+  
+        <template v-slot:secondDescription>
+          <h1>Contact Us</h1>
+          <div>
+            Get in touch for any inquiries or support.
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fuga dicta explicabo earum, nam soluta tempora quos consectetur, expedita, nemo reprehenderit eos ea nesciunt neque odio? Iste asperiores sit molestias?</p>
+        </template>
+    </two-columns>
+    </div>
+  </template>

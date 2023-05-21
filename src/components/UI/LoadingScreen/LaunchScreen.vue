@@ -1,9 +1,7 @@
 <template>
   <div id="loader" class="flex-column">
-    <h2>
-      <p class="title">Dabir Hasan Rizvi</p>
+      <h2 class="title">Dabir Hasan Rizvi</h2>
       <p class="subtitle">Software Developer</p>
-    </h2>
     <FingerprintSpinner :animation-duration="2000" :size="150" color="#f4934f" />
   </div>
 </template>
@@ -24,10 +22,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h2 {
+.title , .subtitle {
   color: #f6704a;
   padding: 10px;
-  font-size: 30px;
   font-family: "Poppins";
   letter-spacing: 1ch;
   text-align: center;

@@ -22,7 +22,7 @@
       </router-link>
     </div>
     <div class="desktop-navbars">
-      <!-- LOGO -->
+      <!-- Socials -->
       <span><i class="fab fa-linkedin social-links"></i></span>
       <span><i class="fas fa-phone-volume social-links"></i></span>
       <span><i class="fas fa-envelope social-links"></i></span>
@@ -107,7 +107,7 @@ const leave = (el, done) => {
   transition: color 0.3s;
 }
 
-.social-links:hover {
+.social-links:hover, .logo:hover {
   color: rgba(227,185,64,255);
 }
 </style>
