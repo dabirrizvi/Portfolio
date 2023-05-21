@@ -1,16 +1,17 @@
 <template>
     <div>
       <two-columns
-        :firstDescriptionClass="'col-6'"
+        :firstDescriptionClass="''"
         :firstDescriptionAos="'fade-right'"
-        :secondDescriptionClass="'col-6'"
+        :secondDescriptionClass="''"
         :secondDescriptionAos="'fade-left'"
       >
         <template v-slot:firstDescription>
-          <div>
             <h1>About Me</h1>
-            <div>Find things about me. Test. Test. Test. Test.</div>
-          </div>
+          <div>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptatibus amet tempora nisi veniam explicabo quasi officia, aliquam quam hic aperiam tempore dignissimos voluptatem, maxime sint at commodi similique dolor.        </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fuga dicta explicabo earum, nam soluta tempora quos consectetur, expedita, nemo reprehenderit eos ea nesciunt neque odio? Iste asperiores sit molestias?</p>
+    
         </template>
   
         <template v-slot:secondDescription>
@@ -22,9 +23,9 @@
       </two-columns>
   
       <two-columns
-        :firstDescriptionClass="'col-4'"
+        :firstDescriptionClass="''"
         :firstDescriptionAos="'slide-up'"
-        :secondDescriptionClass="'col-8'"
+        :secondDescriptionClass="''"
         :secondDescriptionAos="'slide-down'"
       >
         <template v-slot:firstDescription>
