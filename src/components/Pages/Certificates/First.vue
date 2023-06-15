@@ -6,44 +6,42 @@
         depth: 100,
         modifier: 1,
         slideShadows: true,
-    }" :pagination="true" :modules="modules" class="mySwiper">
-        <swiper-slide><a href=""><img src="../../../assets/Certificates/AI For Everyone.jpg" /></a></swiper-slide>
-        <swiper-slide><a href=""><img src="../../../assets/Certificates/c.jpg" /></a></swiper-slide>
-        <swiper-slide><a href=""><img src="../../../assets/Certificates/Deeplearning.jpg" /></a></swiper-slide>
-        <swiper-slide><a href=""><img src="../../../assets/Certificates/devops.jpg" /></a></swiper-slide>
-        <swiper-slide><a href=""><img src="../../../assets/Certificates/GameDev.jpg" /></a></swiper-slide>
-        <swiper-slide><a href=""><img src="../../../assets/Certificates/ML.jpg" /></a></swiper-slide>
-        <swiper-slide><a href=""><img src="../../../assets/Certificates/vue.jpg" /></a></swiper-slide>
+    }" :pagination="true" :navigation="true" :modules="modules" class="mySwiper" :observer="true">
+            <swiper-slide><img src="../../../assets/Certificates/devops.jpg" /></swiper-slide>
+            <swiper-slide><img src="../../../assets/Certificates/vue.jpg" /></swiper-slide>
+            <swiper-slide><img src="../../../assets/Certificates/ML.jpg" /></swiper-slide>
+            <swiper-slide><img src="../../../assets/Certificates/Deeplearning.jpg" /></swiper-slide>
+        <swiper-slide><img src="../../../assets/Certificates/AI For Everyone.jpg" /></swiper-slide>
+        <swiper-slide><img src="../../../assets/Certificates/GameDev.jpg" /></swiper-slide>
+        <swiper-slide><img src="../../../assets/Certificates/c.jpg" /></swiper-slide>
     </swiper>
 </div>
 </template>
 <script>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
-
-// Import Swiper styles
 import "swiper/css";
-
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
-
-// import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import "swiper/css/navigation";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
 export default {
-    components: {
-        Swiper,
-        SwiperSlide,
-    },
-    setup() {
-        return {
-            modules: [EffectCoverflow, Pagination],
-        };
-    },
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const modules = [EffectCoverflow, Pagination, Navigation]; 
+    return {
+      modules,
+    };
+  },
 };
 </script>
-<style scoped>
+<style >
+.swiper-button-disabled{
+    display: none;
+}
 .swiper {
     width: 100%;
     padding-top: 50px;
@@ -57,9 +55,21 @@ export default {
 
 }
 .swiper-pagination-bullet-active{
-    background: wheat ;
+    background: antiquewhite ;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: antiquewhite;
+    border: 3px solid;
+    border-radius: 50px;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+background-color: antiquewhite;
+color: white;
 }
 
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 10px ;
+}
 .swiper-slide img {
     display: block;
     width: 600px;
@@ -75,5 +85,8 @@ export default {
       width: 100%;
       height: auto;
     }
+  }
+  .mySwiper .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0 !important;
   }
 </style>
