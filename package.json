@@ -10,10 +10,11 @@
     "serve": "vite"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.6.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
+    "codyhouse-framework": "^3.0.13",
     "epic-spinners": "^2.0.0",
+    "swiper": "^9.4.1",
     "vue": "^3.2.47",
     "vue-router": "^4.2.0"
   },
