@@ -1,12 +1,13 @@
 <template>
-  <div class="content"><h1>Home</h1></div>
-  <!-- test -->
+<First />
+<Second />
+<Third />
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import First from "./First.vue"
+import Second from "./Second.vue"
+import Third from "./Third.vue"
 </script>
 
 <style>
