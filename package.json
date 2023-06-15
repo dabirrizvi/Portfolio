@@ -10,6 +10,7 @@
     "serve": "vite"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "epic-spinners": "^2.0.0",

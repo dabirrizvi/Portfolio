@@ -10,10 +10,14 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
 <style lang="scss">
 // To create parallax effect
 #app{
-  background-image: url('./assets/background.jpg');
-  background-color: #f5ebe0;
+  color: #fefae0;
+  background-image: linear-gradient(
+    to top,
+    rgba(51, 65, 85, 0.9),
+    rgba(51, 65, 85, 0.9)
+  ), url('./assets/background_2.jpg');
   //  /* Full height */
-    min-height: 110vh;
+    min-height: 100vh;
     max-height:max-content;
    /* Create the parallax scrolling effect */
      background-attachment: fixed;
@@ -23,10 +27,7 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
      z-index: -999;
 }
 
-// section - background colours
-.container-section:nth-child(even) {
-  background: #ffd4a9; 
-}
+
 
 // Headers
 * {

@@ -40,7 +40,7 @@
     </div>
   </div>
   <!-- router animation -->
-  <router-view data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out"></router-view>
+  <router-view></router-view>
 </template>
 
 <script setup>
@@ -67,14 +67,14 @@ const mailLink = computed(() => {
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #334155;
+  color: #fefae0;
 }
 
 .routing {
   text-decoration: none;
   padding: 0.5rem;
   margin: 0 1rem;
-  color: #334155;
+  color: #fefae0;
   transition: color 0.3s;
   position: relative;
 }
@@ -100,12 +100,12 @@ const mailLink = computed(() => {
 .social-links {
   font-size: 1.5rem;
   margin-left: 1rem;
-  color: #334155;
+  color: #fefae0;
   transition: color 0.3s;
 }
 
 .social-links:hover,
 .logo:hover {
-  color: rgba(227, 185, 64, 255);
+  color: #ff7f50;
 }
 </style>
