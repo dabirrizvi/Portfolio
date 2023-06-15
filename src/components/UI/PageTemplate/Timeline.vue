@@ -1,41 +1,45 @@
 <template>
+  <div class="content">
     <div class="cd-vertical-timeline">
       <div class="cd-line"></div>
-  
-      <h2 style="color: black; padding-left: 5rem;">{{ title }}</h2>
+      <h2 class="title">{{ title }}</h2>
       <div v-for="(event, index) in events" :key="index" class="cd-timeline-block">
         <div class="cd-timeline-img">
           <img :src="event.image" alt="Event Image" />
         </div>
         <div class="cd-timeline-content" data-aos="fade-up">
-            <h1>{{ event. name }}</h1>
+          <h1>{{ event.name }}</h1>
           <p>{{ event.date }}</p>
           <h2>{{ event.title }}</h2>
           <p>{{ event.description }}</p>
+          <ul v-if="event.list && event.list.length">
+            <li v-for="(item, itemIndex) in event.list" :key="itemIndex">{{ item }}</li>
+          </ul>
         </div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
   
-  <script>
-  export default {
-    name: 'VerticalTimeline',
-    props: {
-      title: {
-        type: String,
-        default: 'Education'
-      },
-      events: {
-        type: Array,
-        default: () => []
-      }
+<script>
+export default {
+  name: 'VerticalTimeline',
+  props: {
+    title: {
+      type: String,
+      default: 'Education'
+    },
+    events: {
+      type: Array,
+      default: () => []
     }
-  };
-  </script>
+  }
+};
+</script>
   
-  <style lang="scss" scoped>
-  /* CSS styles omitted for brevity */
-  </style>
+<style lang="scss" scoped>
+/* CSS styles omitted for brevity */
+</style>
   
   
 <style lang="scss" scoped>
@@ -95,14 +99,25 @@
   background-color: #f1f1f1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.title{
+  margin-left: 5rem;
+  color: #333;
+}
+@media screen and (max-width: 990px) {
+  .cd-timeline-content,.title {
+    margin-left: 3.5rem;
+  }
+}
 
-.cd-timeline-content h2,h1 {
+.cd-timeline-content h2,
+h1 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   color: #333;
 }
 
-.cd-timeline-content p {
+.cd-timeline-content p,
+li {
   font-size: 1rem;
   line-height: 1.4;
   color: #333;

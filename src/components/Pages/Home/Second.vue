@@ -16,7 +16,7 @@ export default {
           date: 'September 2021 - September 2023',
           title: 'MSc. Advanced Computer Science (with Integrated Year in Industry)',
           image: 'https://pbs.twimg.com/profile_images/1273625898055499777/qbq1u1Sp_400x400.png',
-          description: 'Distinction (Expected)'
+          description: 'Distinction (Expected)',
         },
         {
           name: 'CMR Institute of Technology',
@@ -32,7 +32,8 @@ export default {
           date: 'July 2022 - Present',
           title: 'Junior Web Developer',
           image: 'https://pbs.twimg.com/profile_images/1592812590723391493/rrGCSCkw_400x400.jpg',
-          description: 'Working on building awesome applications'
+          description: 'Full-Time',
+          list: ['Item 1', 'Item 2', 'Item 3'],
         },
         {
           name: 'Racks & Rollers | Storage Technologies & Automation',
