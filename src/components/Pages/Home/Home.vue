@@ -1,7 +1,6 @@
 <template>
 <First />
 <Second />
-<Third />
 </template>
 
 <script setup>
