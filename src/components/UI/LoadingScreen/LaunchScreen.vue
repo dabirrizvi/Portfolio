@@ -41,7 +41,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation-duration: 4s;
+  animation-duration: 3.8s;
   animation-name: loader;
   animation-fill-mode: forwards;
 }
