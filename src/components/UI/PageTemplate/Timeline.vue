@@ -55,11 +55,6 @@ export default {
 </script>
   
 <style lang="scss" scoped>
-/* CSS styles omitted for brevity */
-</style>
-  
-  
-<style lang="scss" scoped>
 .content {
   padding-top: 0px;
 }
