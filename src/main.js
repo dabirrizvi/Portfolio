@@ -2,6 +2,7 @@ import { createApp, isMemoSame } from 'vue'
 import App from './App.vue'
 import router from './router/router.js'
 import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap'
 
 // Page Templates
 

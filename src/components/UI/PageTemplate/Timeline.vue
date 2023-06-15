@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="">
     <div class="cd-vertical-timeline">
       <div class="cd-line"></div>
       <h2 class="title">{{ title }}</h2>
@@ -12,9 +12,26 @@
           <p>{{ event.date }}</p>
           <h2>{{ event.title }}</h2>
           <p>{{ event.description }}</p>
-          <ul v-if="event.list && event.list.length">
-            <li v-for="(item, itemIndex) in event.list" :key="itemIndex">{{ item }}</li>
-          </ul>
+          <!-- bootstrap acordion -->
+          <div v-if="event.list && event.list.length" class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                 View Details
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul v-if="event.list && event.list.length">
+                    <li v-for="(item, itemIndex) in event.list" :key="itemIndex">{{ item }}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- acordion end -->
         </div>
       </div>
     </div>
@@ -43,6 +60,10 @@ export default {
   
   
 <style lang="scss" scoped>
+.content {
+  padding-top: 0px;
+}
+
 .cd-vertical-timeline {
   position: relative;
   margin: 0 auto;
@@ -99,12 +120,15 @@ export default {
   background-color: #f1f1f1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.title{
+
+.title {
   margin-left: 5rem;
   color: #333;
 }
+
 @media screen and (max-width: 990px) {
-  .cd-timeline-content,.title {
+
+  .cd-timeline-content {
     margin-left: 3.5rem;
   }
 }
@@ -121,6 +145,5 @@ li {
   font-size: 1rem;
   line-height: 1.4;
   color: #333;
-}
-</style>
+}</style>
   
