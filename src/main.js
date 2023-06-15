@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 // Page Templates
 
 import TwoColumns from './components/UI/PageTemplate/TwoColumn.vue'
+import Timeline from './components/UI/PageTemplate/Timeline.vue'
 
 
 import AOS from 'aos'
@@ -17,6 +18,7 @@ app.use(router);
 
 
 app.component('two-columns',TwoColumns)
+app.component('timeline',Timeline)
 
 router.isReady().then(function () {
     app.mount('#app')
