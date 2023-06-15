@@ -1,12 +1,13 @@
 <template>
-  <div data-aos="fade-in" data-aos-ease="ease" data-aos-duration="1500" class="content"><h1>Home</h1></div>
-  <!-- test -->
+<First />
+<Second />
+<Third />
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import First from "./First.vue"
+import Second from "./Second.vue"
+import Third from "./Third.vue"
 </script>
 
 <style>
