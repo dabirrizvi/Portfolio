@@ -37,7 +37,7 @@ export default {
   right: 0;
   top: 0;
   position: fixed;
-  z-index: 100;
+  z-index: 1100;
   display: flex;
   align-items: center;
   justify-content: center;
