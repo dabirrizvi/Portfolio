@@ -15,7 +15,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptatibus 
       </template>
 
       <template v-slot:secondDescription>
-        <h1>Test Heading</h1>
+        <h1>Test</h1>
         <div>
 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptatibus amet tempora nisi veniam explicabo quasi officia, aliquam quam hic aperiam tempore dignissimos voluptatem, maxime sint at commodi similique dolor.        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fuga dicta explicabo earum, nam soluta tempora quos consectetur, expedita, nemo reprehenderit eos ea nesciunt neque odio? Iste asperiores sit molestias?</p>
