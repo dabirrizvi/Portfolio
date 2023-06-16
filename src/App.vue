@@ -42,7 +42,6 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
 @media (max-width: 990px) {
   .content {
     padding-top: 1rem;
-    padding-left: 4rem;
 
   }
 }
