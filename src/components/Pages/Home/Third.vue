@@ -1,11 +1,11 @@
 <template>
     <div class="background">
-            <h1>Skills</h1>
+            <h1>Technical Skills</h1>
       <div class="row">
         <div class="col-xxl-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" 
         data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
           <h2>{{ headings[columnIndex] }}</h2>
-          <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper">
+          <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper" :pagination="true" :navigation="true" :observer="true">
             <swiper-slide v-for="(image, imageIndex) in column.images" :key="imageIndex">
               <div class="image-wrapper" :style="{ backgroundColor: image.color }">
                 <img :src="image.src" :alt="'Image ' + (imageIndex + 1)" />
@@ -21,7 +21,9 @@
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import 'swiper/css';
   import 'swiper/css/effect-cards';
-  import { EffectCards } from 'swiper';
+  import "swiper/css/pagination";
+  import "swiper/css/navigation";
+  import { EffectCards, Pagination, Navigation  } from 'swiper';
   
   export default {
     components: {
@@ -30,7 +32,7 @@
     },
     data() {
       return {
-        modules: [EffectCards],
+        modules: [EffectCards, Pagination, Navigation],
         headings: ['Web Technologies', 'Programming Languages', 'Miscellaneous Skills'],
         columns: [
           {
@@ -57,7 +59,7 @@
           {
             images: [
               { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png', color: '#ddc49e' },
-              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png', color: '#fff3b0' },
+              { src: 'https://icons-for-free.com/iconfiles/png/512/postgresql+plain+wordmark-1324760555518154961.png', color: '#fff3b0' },
               { src: 'https://robotwealth.com/wp-content/uploads/2017/07/google-cloud-platform.png', color: '#9ef01a' },
               { src: 'https://img.uxwing.com/wp-content/themes/uxwing/download/internet-network-technology/artificial-intelligence-ai-icon.png', color: '#bbdefb' },
               { src: 'https://us.123rf.com/450wm/nexusby/nexusby2201/nexusby220100009/181526358-agile-development-method-vector-illustration.jpg', color: '#fff' },
@@ -74,9 +76,11 @@
   .card {
     padding: 50px;
     border: none;
+    background-color: #f1f1f1;
+
   }
   .background {
-    background-color: white;
+    background-color: #f1f1f1;
   }
   h2,h1 {
     text-align: center;

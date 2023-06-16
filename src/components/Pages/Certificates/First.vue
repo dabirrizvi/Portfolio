@@ -55,15 +55,16 @@ export default {
 
 }
 .swiper-pagination-bullet-active{
-    background: antiquewhite ;
+    background: #d5bdaf ;
+    border: 1px solid;
 }
 .swiper-button-next, .swiper-button-prev{
-    color: antiquewhite;
+    color: bisque;
     border: 3px solid;
     border-radius: 50px;
 }
 .swiper-button-next:hover, .swiper-button-prev:hover{
-background-color: antiquewhite;
+background-color: bisque;
 color: white;
 }
 
