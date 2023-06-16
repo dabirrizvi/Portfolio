@@ -1,5 +1,5 @@
 <template>
-    <div class="content">
+    <div class="content"  data-aos="fade-in" data-aos-duration="500" data-aos-easing="ease-in">
     <swiper :effect="'coverflow'" :grabCursor="true" :centeredSlides="true" :slidesPerView="'auto'" :coverflowEffect="{
         rotate: 50,
         stretch: 0,
