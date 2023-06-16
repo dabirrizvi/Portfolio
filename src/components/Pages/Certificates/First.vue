@@ -11,7 +11,7 @@
             <swiper-slide><img src="../../../assets/Certificates/vue.jpg" /></swiper-slide>
             <swiper-slide><img src="../../../assets/Certificates/ML.jpg" /></swiper-slide>
             <swiper-slide><img src="../../../assets/Certificates/Deeplearning.jpg" /></swiper-slide>
-        <swiper-slide><img src="../../../assets/Certificates/AI For Everyone.jpg" /></swiper-slide>
+        <swiper-slide><img src="../../../assets/Certificates/AI.jpg" /></swiper-slide>
         <swiper-slide><img src="../../../assets/Certificates/GameDev.jpg" /></swiper-slide>
         <swiper-slide><img src="../../../assets/Certificates/c.jpg" /></swiper-slide>
     </swiper>
