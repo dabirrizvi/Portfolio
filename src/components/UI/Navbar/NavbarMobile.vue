@@ -32,11 +32,6 @@
                 <span class="text">Projects</span>
             </router-link>
 
-            <router-link to="/certificates" class="button">
-                <span class="material-icons">workspace_premium</span>
-                <span class="text">Cerificates</span>
-            </router-link>
-
             <router-link to="/contact" class="button">
                 <span class="material-icons">contact_page</span>
                 <span class="text">Contact</span>

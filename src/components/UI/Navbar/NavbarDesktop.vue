@@ -14,9 +14,6 @@
       <router-link to="/projects" class="routing" active-class="active">
         <span class="heading">Projects</span>
       </router-link>
-      <router-link to="/certificates" class="routing" active-class="active">
-        <span class="heading">Certificates</span>
-      </router-link>
       <router-link to="/contact" class="routing" active-class="active">
         <span class="heading">Contacts</span>
       </router-link>
