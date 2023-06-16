@@ -1,6 +1,6 @@
 <template>
     <div class="background-certificate">
-        <div class="certificate-template" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease" data-aos-delay="500">
+        <div class="certificate-template" data-aos="fade-left">
             <swiper :effect="'coverflow'" :grabCursor="true" :centeredSlides="true" :slidesPerView="'auto'"
                 :coverflowEffect="{
                     rotate: 50,

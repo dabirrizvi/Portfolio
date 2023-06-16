@@ -3,7 +3,7 @@
             <h1>Technical Skills</h1>
       <div class="row">
         <div class="col-xxl-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" 
-        data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+        data-aos="zoom-in">
           <h2>{{ headings[columnIndex] }}</h2>
           <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper" :pagination="true" :navigation="true" :observer="true">
             <swiper-slide v-for="(image, imageIndex) in column.images" :key="imageIndex">
