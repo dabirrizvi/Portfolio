@@ -44,6 +44,7 @@ export default {
 <style scoped>
 .background-certificate {
     background-color: #28282B;
+    overflow: hidden;
 }
 .certificate-template{
     align-items: center;

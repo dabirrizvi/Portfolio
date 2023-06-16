@@ -1,5 +1,5 @@
 <template>
-  <div class="background">
+  <div class="background container-fluid">
     <timeline :title="'Education'" :events="educationEvents" />
     <timeline :title="'Work Experience'" :events="workExperienceEvents" />
   </div>

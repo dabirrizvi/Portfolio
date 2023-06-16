@@ -1,4 +1,5 @@
 <template>
+  <div class="container-fluid">
   <two-columns
       :firstDescriptionClass="''"
       :firstDescriptionAos="'fade-right'"
@@ -13,6 +14,7 @@ my expertise to build robust and scalable software applications. With a passion 
 eager to take on challenging projects and collaborate with others to drive business success.</h2> -->
       </template>
     </two-columns>
+  </div>
 </template>
 
 <script>

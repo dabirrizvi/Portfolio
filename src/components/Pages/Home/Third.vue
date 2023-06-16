@@ -1,7 +1,7 @@
 <template>
-    <div class="background">
+    <div class="background container-fluid ">
             <h1>Technical Skills</h1>
-      <div class="row">
+      <div class="row container-fluid">
         <div class="col-xxl-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" 
         data-aos="zoom-in">
           <h2>{{ headings[columnIndex] }}</h2>
