@@ -16,14 +16,14 @@ export default {
           date: 'September 2021 - September 2023',
           title: 'MSc. Advanced Computer Science (with Integrated Year in Industry)',
           image: 'https://pbs.twimg.com/profile_images/1273625898055499777/qbq1u1Sp_400x400.png',
-          description: 'Distinction (Expected)',
+          // description: 'Distinction (Expected)',
         },
         {
           name: 'CMR Institute of Technology',
           date: 'August 2016 - August 2020',
           title: 'B.E in Electronics & Communication Engineering',
           image: 'https://www.edudunia.com/eduadmin/images/uploaded/24458.CMR_Bangalore.jpg',
-          description: 'Second Class Hons.'
+          // description: 'Second Class Hons.'
         }
       ],
       workExperienceEvents: [
@@ -40,7 +40,7 @@ export default {
           date: 'January 2020 - July 2020',
           title: 'Java Programmer - Internship',
           image: 'https://media.licdn.com/dms/image/C510BAQGERRjXk0PzgQ/company-logo_200_200/0/1561382243696?e=2147483647&v=beta&t=1PliIYf_uMC_bQ5GbPbrv_wTdkklfrhhu2HN0Duj2Nk',
-          description: 'Contributed to various projects'
+          // description: 'Contributed to various projects'
         }
       ]
     };
