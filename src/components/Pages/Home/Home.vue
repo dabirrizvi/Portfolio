@@ -63,6 +63,9 @@ color: white;
       width: 100%;
       height: auto;
     }
+    .swiper-button-next, .swiper-button-prev{
+      display: none;
+    }
   }
  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     opacity: 0 !important;

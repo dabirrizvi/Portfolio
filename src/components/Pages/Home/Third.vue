@@ -2,7 +2,7 @@
     <div class="background container-fluid ">
             <h1>Technical Skills</h1>
       <div class="row container-fluid">
-        <div class="col-xxl-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" 
+        <div class="col-xxl-4 col-lg-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" 
         data-aos="zoom-in">
           <h2>{{ headings[columnIndex] }}</h2>
           <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper" :pagination="true" :navigation="true" :observer="true">
@@ -33,18 +33,9 @@
     data() {
       return {
         modules: [EffectCards, Pagination, Navigation],
-        headings: ['Web Technologies', 'Programming Languages', 'Miscellaneous Skills'],
+        headings: ['Programming Languages', 'Web Technologies', 'Miscellaneous Skills'],
         columns: [
-          {
-            images: [
-              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png', color: '#fff3b0' },
-              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png', color: '#9ef01a' },
-              { src: 'https://www.svgrepo.com/download/21671/css.svg', color: '#bbdefb' },
-              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png', color: '#0fa3b1' },
-              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wordpress-Logo.svg/2048px-Wordpress-Logo.svg.png', color: '#fff3b0' },
-              { src: 'https://www.svgrepo.com/show/303592/magento-2-logo.svg', color: '#c9ada7' },
-            ],
-          },
+
           {
             images: [
               { src: 'https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-512.png', color: '#ffd100' },
@@ -54,6 +45,16 @@
               { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png', color: '#0fa3b1' },
               { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png', color: '#fff3b0' },
               { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/991px-R_logo.svg.png', color: '#c9ada7' },
+            ],
+          },
+          {
+            images: [
+              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png', color: '#fff3b0' },
+              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png', color: '#9ef01a' },
+              { src: 'https://www.svgrepo.com/download/21671/css.svg', color: '#bbdefb' },
+              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png', color: '#0fa3b1' },
+              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wordpress-Logo.svg/2048px-Wordpress-Logo.svg.png', color: '#fff3b0' },
+              { src: 'https://www.svgrepo.com/show/303592/magento-2-logo.svg', color: '#c9ada7' },
             ],
           },
           {
