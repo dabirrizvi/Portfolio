@@ -1,16 +1,16 @@
 <template>
-<First />
-<Second />
-<Third />
-<Fourth />
+<Intro />
+<Career />
+<Skills />
+<Certificates />
 <Footer />
 </template>
 
 <script setup>
-import First from "./First.vue"
-import Second from "./Second.vue"
-import Third from "./Third.vue"
-import Fourth from "./Forth.vue"
+import Intro from "./Intro.vue"
+import Career from "./Career.vue"
+import Skills from "./Skills.vue"
+import Certificates from "./Certificates.vue"
 import Footer from "../../UI/PageTemplate/Footer.vue"
 </script>
 

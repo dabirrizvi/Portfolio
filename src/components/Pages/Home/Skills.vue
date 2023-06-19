@@ -40,7 +40,6 @@
             images: [
               { src: 'https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-512.png', color: '#ffd100' },
               { src: 'https://cdn.freebiesupply.com/logos/thumbs/2x/java-logo.png', color: '#fff' },
-              { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/480px-Python.svg.png', color: '#ccc' },
               { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png', color: '#bbdefb' },
               { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png', color: '#0fa3b1' },
               { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png', color: '#fff3b0' },
