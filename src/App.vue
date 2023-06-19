@@ -15,7 +15,7 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
     to top,
     rgba(51, 65, 85, 0.9),
     rgba(51, 65, 85, 0.9)
-  ), url('./assets/background_2.jpg');
+  ), url('https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Background/background_2.jpg');
   //  /* Full height */
     min-height: 100vh;
     max-height:max-content;
