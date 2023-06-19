@@ -76,6 +76,7 @@
   <style lang="scss" scoped>
   .container-fluid{
     margin: 0;
+    padding: 50px 0px;
   }
   .card {
     padding: 30px;
@@ -85,6 +86,7 @@
   }
   .background {
     background-color: #f1f1f1;
+    overflow: hidden;
   }
   h2,h1 {
     text-align: center;
