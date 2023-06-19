@@ -18,23 +18,6 @@
         <span class="heading">Contacts</span>
       </router-link>
     </div>
-    <div class="desktop-navbars">
-      <!-- Socials -->
-      <span>
-        <a href="https://www.linkedin.com/in/dabir-hasan-rizvi-738a83185/" target="_blank">
-          <i class="fab fa-linkedin social-links"></i>
-        </a>
-      </span>
-      <span>
-        <a href="tel:+44(0)07737 906374" target="_blank">
-          <i class="fas fa-phone-volume social-links"></i>
-        </a>
-      </span>
-      <span>
-        <a :href="mailLink" target="_blank">
-          <i class="fas fa-envelope social-links"></i>
-        </a></span>
-    </div>
   </div>
   <!-- router animation -->
   <router-view></router-view>
@@ -92,17 +75,5 @@ const mailLink = computed(() => {
   width: 100%;
   height: 2px;
   background-color: #ff7f50;
-}
-
-.social-links {
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  color: #fefae0;
-  transition: color 0.3s;
-}
-
-.social-links:hover,
-.logo:hover {
-  color: #ff7f50;
 }
 </style>
