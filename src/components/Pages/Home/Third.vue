@@ -74,8 +74,11 @@
   </script>
   
   <style lang="scss" scoped>
+  .container-fluid{
+    margin: 0;
+  }
   .card {
-    padding: 50px;
+    padding: 30px;
     border: none;
     background-color: #f1f1f1;
 

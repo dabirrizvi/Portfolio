@@ -3,6 +3,7 @@
 <Second />
 <Third />
 <Fourth />
+<Footer />
 </template>
 
 <script setup>
@@ -10,6 +11,7 @@ import First from "./First.vue"
 import Second from "./Second.vue"
 import Third from "./Third.vue"
 import Fourth from "./Forth.vue"
+import Footer from "../../UI/PageTemplate/Footer.vue"
 </script>
 
 <style>
