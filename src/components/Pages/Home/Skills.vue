@@ -51,6 +51,7 @@
               { src: 'https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Skills/Soft/Vue.svg', color: '#f7ede2' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Skills/Soft/HTML.svg', color: '#f3722c' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Skills/Soft/CSS.svg', color: '#4ea8de' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Skills/Soft/Bootstrap.svg', color: '#7678ed' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Skills/Soft/Sass.svg', color: '#e9ecef' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Skills/Soft/Talwind.svg', color: '#fff3b0' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Skills/Soft/Wordpress.svg', color: '#e0c3fc' },
