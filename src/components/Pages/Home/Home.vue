@@ -35,15 +35,16 @@ import Footer from "../../UI/PageTemplate/Footer.vue"
 }
 .swiper-pagination-bullet-active{
     background: white ;
-    border: 1px solid black;
+    border: 1px solid #253237;
 }
 .swiper-button-next, .swiper-button-prev{
-    color: bisque;
+    color: black;
     border: 3px solid;
     border-radius: 50px;
+    opacity: 0.8;
 }
 .swiper-button-next:hover, .swiper-button-prev:hover{
-background-color: bisque;
+background-color: black;
 color: white;
 }
 
