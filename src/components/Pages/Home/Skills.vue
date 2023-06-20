@@ -2,8 +2,7 @@
     <div class="background container-fluid ">
             <h1>Technical Skills</h1>
       <div class="row container-fluid">
-        <div class="col-xxl-4 col-lg-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" 
-        data-aos="zoom-in">
+        <div class="col-xxl-4 col-lg-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" >
           <h2>{{ headings[columnIndex] }}</h2>
           <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper" :pagination="true" :navigation="true" :observer="true">
             <swiper-slide v-for="(image, imageIndex) in column.images" :key="imageIndex">
