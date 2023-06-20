@@ -39,7 +39,7 @@
             images: [
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/JS.svg', color: '#ffd100' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/JAVA.svg', color: '#fff' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/Python.svg', color: '#231942' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/Python.svg', color: '#c7f9cc' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C.svg', color: '#f1faee' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C++.png', color: '#fff3b0' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/R.svg', color: '#e0e1dd' },
@@ -59,12 +59,12 @@
           },
           {
             images: [
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/Git.svg', color: '#eec170' },
+            { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/agile.jpg', color: '#fff' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/Git.svg', color: '#c9ada7' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/AI.png', color: '#e0fbfc' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/POSTGRESQL.svg', color: '#9db4c0' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/GCP.png', color: '#f8ffe5' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/agile.jpg', color: '#fff' },
-              
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/GCP.png', color: '#ffddd2' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/mongodb.svg', color: '#f8ffe5' },              
             ],
           },
         ],
