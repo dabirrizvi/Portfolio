@@ -8,6 +8,7 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 // To create parallax effect
 #app{
   color: #fefae0;

@@ -76,4 +76,7 @@ const mailLink = computed(() => {
   height: 2px;
   background-color: #ff7f50;
 }
+.logo, .heading{
+  font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+}
 </style>
