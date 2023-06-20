@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap'
 
 // Page Templates
-import TwoColumns from './components/UI/PageTemplate/TwoColumn.vue'
 import Timeline from './components/UI/PageTemplate/Timeline.vue'
 
 // Importing Animation on Scroll
@@ -18,7 +17,6 @@ AOS.init();
 app.use(router);
 
 // Initiliasing templates
-app.component('two-columns',TwoColumns)
 app.component('timeline',Timeline)
 
 router.isReady().then(function () {
