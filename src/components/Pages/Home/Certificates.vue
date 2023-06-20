@@ -9,13 +9,13 @@
                     modifier: 1,
                     slideShadows: true,
                 }" :pagination="true" :navigation="true" :modules="modules" class="mySwiper" :observer="true">
-                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Certificates/devops.jpg" /></swiper-slide>
-                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Certificates/vue.jpg" /></swiper-slide>
-                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Certificates/ML.jpg" /></swiper-slide>
-                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Certificates/Deeplearning.jpg" /></swiper-slide>
-                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Certificates/AI.jpg" /></swiper-slide>
-                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Certificates/GameDev.jpg" /></swiper-slide>
-                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/Portfolio/main/src/assets/Certificates/c.jpg" /></swiper-slide>
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/devops.jpg" /></swiper-slide>
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/vue.jpg" /></swiper-slide>
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/ML.jpg" /></swiper-slide>
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/Deeplearning.jpg" /></swiper-slide>
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/AI.jpg" /></swiper-slide>
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/GameDev.jpg" /></swiper-slide>
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/c.jpg" /></swiper-slide>
             </swiper>
         </div>
     </div>
