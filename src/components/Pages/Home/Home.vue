@@ -38,14 +38,15 @@ import Footer from "../../UI/PageTemplate/Footer.vue"
     border: 1px solid #253237;
 }
 .swiper-button-next, .swiper-button-prev{
-    color: black;
-    border: 3px solid;
+    color: #253237;
+    border: 2px solid #283618;
     border-radius: 50px;
     opacity: 0.8;
 }
 .swiper-button-next:hover, .swiper-button-prev:hover{
-background-color: black;
+background-color: #253237;
 color: white;
+border: 2px solid white;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after{
@@ -72,5 +73,11 @@ color: white;
   }
  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     opacity: 0 !important;
+  }
+  .swiper-button-next{
+    right: 5px;
+  }
+  .swiper-button-prev{
+    left: 5px;
   }
 </style>
