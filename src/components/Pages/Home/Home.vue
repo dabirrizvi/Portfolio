@@ -11,6 +11,7 @@ import Intro from "./Intro.vue"
 import Career from "./Career.vue"
 import Skills from "./Skills.vue"
 import Certificates from "./Certificates.vue"
+import References from "./References.vue"
 import Footer from "../../UI/PageTemplate/Footer.vue"
 </script>
 
