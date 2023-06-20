@@ -40,11 +40,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 .title,
 .subtitle {
   color: #fff;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
   text-align: center;
   font-weight: bold;
 }
@@ -63,7 +62,7 @@ export default {
 }
 }
 #loader {
-  background-color: #0A0076;
+  background-color: #006d77;
   /* Bright background color */
   left: -100%;
   bottom: 0;
