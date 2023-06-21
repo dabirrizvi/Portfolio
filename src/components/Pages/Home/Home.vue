@@ -3,6 +3,7 @@
 <Career />
 <Skills />
 <Certificates />
+<References />
 <Footer />
 </template>
 
