@@ -1,5 +1,5 @@
 <template>
-  <div style="overflow: hidden;">
+  <div style="overflow: hidden;" data-aos="zoom-in">
     <div class="card-container row">
       <div v-for="(card, index) in shuffledCards" :key="card.id" :class="[cardColClass(index)]" style="padding: 25px;">
         <div class="card hover-card">
@@ -22,7 +22,7 @@
   
 <script>
 export default {
-  data() {
+  data() { 
     return {
       cards: [
         {
@@ -65,7 +65,7 @@ export default {
 };
 </script>
   
-<style>
+<style scoped>
 .hover-card {
   position: relative;
   overflow: hidden;
