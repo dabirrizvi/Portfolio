@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <div class="cd-vertical-timeline">
       <div class="cd-line"></div>
       <h2 class="title">{{ title }}</h2>
@@ -12,31 +12,32 @@
           <p>{{ event.date }}</p>
           <h2>{{ event.title }}</h2>
           <p>{{ event.description }}</p>
-          <!-- bootstrap acordion -->
-          <div v-if="event.list && event.list.length" class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Bootstrap accordion -->
+          <div v-if="event.list && event.list.length" :id="'accordionFlushExample' + index" class="accordion accordion-flush">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                 View Details
+              <h2 class="accordion-header" :id="'flush-headingOne' + index">
+                <button class="accordion-button collapsed" type="button" :data-bs-toggle="'collapse'" :data-bs-target="'#flush-collapseOne' + index"
+                  :aria-expanded="false" :aria-controls="'flush-collapseOne' + index">
+                  {{ event.button_text }}
                 </button>
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample">
+              <div :id="'flush-collapseOne' + index" class="accordion-collapse collapse" :aria-labelledby="'flush-headingOne' + index"
+                :data-bs-parent="'#accordionFlushExample' + index">
                 <div class="accordion-body">
-                  <ul v-if="event.list && event.list.length">
+                  <ul>
                     <li v-for="(item, itemIndex) in event.list" :key="itemIndex">{{ item }}</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <!-- acordion end -->
+          <!-- Accordion end -->
         </div>
       </div>
     </div>
   </div>
 </template>
+
   
 <script>
 export default {

@@ -33,6 +33,7 @@ export default {
           title: 'Junior Web Developer',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/nws.jpg',
           description: 'Full-Time',
+          button_text:'View More',
           list: ['Item 1', 'Item 2', 'Item 3'],
         },
         {
@@ -40,7 +41,9 @@ export default {
           date: 'January 2020 - July 2020',
           title: 'Java Programmer - Internship',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/rnr.jpg',
-          // description: 'Contributed to various projects'
+          // description: 'Contributed to various projects',
+          button_text:'View ',
+          list: ['Item 4', 'Item 2', 'Item 3'],
         }
       ]
     };
