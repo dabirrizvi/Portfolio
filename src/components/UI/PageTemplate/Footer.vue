@@ -6,21 +6,13 @@
       <!--Grid row-->
       <MDBRow>
         <!--Grid column-->
-        <MDBCol lg="5" md="12" class="mb-4 mb-md-0">
+        <MDBCol lg="6" md="12" class="mb-4 mb-md-0">
           <h5>About Me</h5>
           <p>
             I am a passionate software developer, driven by the desire to create innovative solutions and simplify complex problems. With a solid foundation in programming languages and a strong problem-solving mindset.
           </p>
         </MDBCol>
-        <MDBCol lg="1" md="12" class="mb-4 mb-md-0"></MDBCol>
-        <!--Grid column-->
-        <MDBCol lg="2" md="12" class="mb-4 mb-md-0">
-          <h5>Address</h5>
-          <p>22 Talbot Road</p>
-          <p> Wrexham LL13 7DY</p>
-          <p> United Kingdom</p>
-        </MDBCol>
-
+        <MDBCol lg="2" md="12" class="mb-4 mb-md-0"></MDBCol>
         <!--Grid column-->
         <MDBCol lg="4" md="12" class="mb-4 mb-md-0">
           <h5>Get in touch</h5>

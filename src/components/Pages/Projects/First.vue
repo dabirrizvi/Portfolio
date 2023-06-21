@@ -89,7 +89,6 @@ export default {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
-  /* Add transition for top property */
 }
 
 .hover-card:hover .card-overlay {
