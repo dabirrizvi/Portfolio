@@ -4,6 +4,7 @@ import router from './router/router.js'
 // Importing Bootstrap
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap'
+import VueKinesis from "vue-kinesis";
 
 // Page Templates
 import Timeline from './components/UI/PageTemplate/Timeline.vue'
@@ -18,6 +19,7 @@ app.use(router);
 
 // Initiliasing templates
 app.component('timeline',Timeline)
+app.use(VueKinesis);
 
 router.isReady().then(function () {
     app.mount('#app')
