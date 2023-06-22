@@ -89,9 +89,9 @@ export default {
                     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est molestiae aperiam aliquid illum in, deserunt vero quidem facilis, id, libero voluptatibus possimus. Impedit aliquam culpa qui beatae dolore dicta?',
                     position: 'Head of Web Development, Net World Sports',
                     image: 'https://t4.ftcdn.net/jpg/02/22/39/63/360_F_222396357_KlP0TQwV3X1U6rJWzlLcIpJ7ZLpxGcQR.jpg',
-                    linkedin:'https://google.co.uk',
+                    linkedin:'/',
                     telephone:'tel:123-456-7890',
-                    email:'mailto:dabir.rizvi@gmail.com'
+                    email:'mailto:aaa@bbb.com'
                 },
                 {
                     name: 'Dr. Edel Sheratt',
