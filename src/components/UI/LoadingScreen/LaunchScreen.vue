@@ -53,7 +53,7 @@ export default {
 .subtitle{
   font-size: 2rem;
 }
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
   .title{
   font-size: 2rem;
 }

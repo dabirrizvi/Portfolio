@@ -60,11 +60,11 @@ const mailLink = computed(() => {
 }
 
 .routing:hover {
-  color: #ff7f50;
+  color: #FFE4C4;
 }
 
 .routing.active {
-  color: #ff7f50;
+  color: #FFE4C4;
 }
 
 .routing.active::after {
@@ -74,7 +74,7 @@ const mailLink = computed(() => {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #ff7f50;
+  background-color: #FFE4C4;
 }
 .logo, .heading{
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;

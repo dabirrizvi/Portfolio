@@ -9,7 +9,7 @@
         <MDBCol lg="6" md="12" class="mb-4 mb-md-0">
           <h5>About Me</h5>
           <p>
-            I am a passionate software developer, driven by the desire to create innovative solutions and simplify complex problems. With a solid foundation in programming languages and a strong problem-solving mindset.
+            I am a passionate software developer, driven by the desire to create innovative solutions and simplify complex problems. With a solid foundation in programming languages and a strong problem-solving mindset, I strive to craft efficient and scalable software solutions that empower businesses and make a positive impact.
           </p>
         </MDBCol>
         <MDBCol lg="2" md="12" class="mb-4 mb-md-0"></MDBCol>
@@ -69,7 +69,7 @@ export default {
   padding: 10px 20px 20px 0px;
 }
 
-@media screen and (max-width:768px) {
+@media (max-width:768px) {
   .fa-brands,.fa-solid {
     padding: 10px 15px 15px 10px;
   }

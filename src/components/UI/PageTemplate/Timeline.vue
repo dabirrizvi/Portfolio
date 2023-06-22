@@ -122,7 +122,7 @@ export default {
   color: #333;
 }
 
-@media screen and (max-width: 990px) {
+@media (max-width: 990px) {
 
   .cd-timeline-content {
     margin-left: 3.5rem;

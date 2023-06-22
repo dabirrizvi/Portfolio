@@ -173,7 +173,7 @@ hr {
     text-align: end;
 }
 
-@media screen and (max-width: 990px) {
+@media (max-width: 990px) {
     .line {
         display: none;
     }
