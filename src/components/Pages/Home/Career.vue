@@ -41,12 +41,12 @@ export default {
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/nws.jpg',
           description: 'Full-Time (Industrial Year)',
           button_text:'View Details',
-          list: ['Built responsive and reusable front-end components using a micro-service architecture with Vue.js.', 
-          'Implemented responsive design experience and ensured optimal user experience for the company’s blog website working in collaboration with the content and SEO teams.',
-           'Identified workflow pain points across all departments and developed a Chrome Extension, working with APIs to address those needs.',
-          'Employing Agile Methodology to migrate 40+ e-commerce stores from Magento 1 to Magento 2, improving website performance and customer experience.',
-          'Tools and languages used: JavaScript, Gulp, Jira, Php, jQuery, PostgreSQL, Vue.js, Magento 2, WordPress, HTML, CSS, Sass.'
-          ],
+          // list: ['Built responsive and reusable front-end components using a micro-service architecture with Vue.js.', 
+          // 'Implemented responsive design experience and ensured optimal user experience for the company’s blog website working in collaboration with the content and SEO teams.',
+          //  'Identified workflow pain points across all departments and developed a Chrome Extension, working with APIs to address those needs.',
+          // 'Employing Agile Methodology to migrate 40+ e-commerce stores from Magento 1 to Magento 2, improving website performance and customer experience.',
+          // 'Tools and languages used: JavaScript, Php, jQuery, Manifest JS, Vue.js, Magento 2, WordPress, HTML, CSS, Sass.'
+          // ],
         },
         {
           id:'4',
@@ -67,6 +67,6 @@ export default {
 </script>
 <style scoped>
 .background{
-  background-color: bisque;
+  background-color: #ffe4c4;
 }
 </style>
