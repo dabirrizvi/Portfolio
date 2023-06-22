@@ -4,7 +4,7 @@
       <div class="row container-fluid">
         <div class="col-xxl-4 col-lg-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" >
           <h2>{{ headings[columnIndex] }}</h2>
-          <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper" :pagination="true" :observer="true">
+          <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper" :pagination="true" :observer="true" :navigation="true">
             <swiper-slide v-for="(image, imageIndex) in column.images" :key="imageIndex">
               <div class="image-wrapper" :style="{ backgroundColor: image.color }">
                 <img :src="image.src" :alt="'Image ' + (imageIndex + 1)" />
@@ -21,6 +21,7 @@
   import 'swiper/css';
   import 'swiper/css/effect-cards';
   import "swiper/css/pagination";
+  import "swiper/css/navigation";
   import { EffectCards, Pagination, Navigation  } from 'swiper';
   
   export default {
