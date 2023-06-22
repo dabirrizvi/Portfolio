@@ -13,16 +13,16 @@
           <h2>{{ event.title }}</h2>
           <p>{{ event.description }}</p>
           <!-- Bootstrap accordion -->
-          <div v-if="event.list && event.list.length" :id="'accordionFlushExample' + index" class="accordion accordion-flush">
+          <div v-if="event.list && event.list.length" :id="'accordionFlushExample' + event.id" class="accordion accordion-flush">
             <div class="accordion-item">
-              <h2 class="accordion-header" :id="'flush-headingOne' + index">
-                <button class="accordion-button collapsed" type="button" :data-bs-toggle="'collapse'" :data-bs-target="'#flush-collapseOne' + index"
-                  :aria-expanded="false" :aria-controls="'flush-collapseOne' + index">
+              <h2 class="accordion-header" :id="'flush-headingOne' + event.id">
+                <button class="accordion-button collapsed" type="button" :data-bs-toggle="'collapse'" :data-bs-target="'#flush-collapseOne' + event.id"
+                  :aria-expanded="false" :aria-controls="'flush-collapseOne' + event.id">
                   {{ event.button_text }}
                 </button>
               </h2>
-              <div :id="'flush-collapseOne' + index" class="accordion-collapse collapse" :aria-labelledby="'flush-headingOne' + index"
-                :data-bs-parent="'#accordionFlushExample' + index">
+              <div :id="'flush-collapseOne' + event.id" class="accordion-collapse collapse" :aria-labelledby="'flush-headingOne' + event.id"
+                :data-bs-parent="'#accordionFlushExample' + event.id">
                 <div class="accordion-body">
                   <ul>
                     <li v-for="(item, itemIndex) in event.list" :key="itemIndex">{{ item }}</li>
@@ -38,7 +38,6 @@
   </div>
 </template>
 
-  
 <script>
 export default {
   name: 'VerticalTimeline',
@@ -54,6 +53,7 @@ export default {
   }
 };
 </script>
+
   
 <style lang="scss" scoped>
 .content {
@@ -139,7 +139,7 @@ h1 {
 .cd-timeline-content p,
 li {
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 30px;
   color: #333;
 }</style>
   
