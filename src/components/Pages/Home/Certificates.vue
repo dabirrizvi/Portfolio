@@ -48,6 +48,6 @@ export default {
 }
 .certificate-template{
     align-items: center;
-    padding: 100px 0px;
+    padding: 150px 0px;
 }
 </style>
