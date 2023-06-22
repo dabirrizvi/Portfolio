@@ -178,10 +178,6 @@ hr {
         display: none;
     }
 }
-
-.col-6 {
-    padding: 0;
-}
 a{
     color: #fefae0;
 }
