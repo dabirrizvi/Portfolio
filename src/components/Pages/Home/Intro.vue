@@ -18,6 +18,7 @@
   display: flex;
   overflow: hidden;
   margin: auto;
+  padding: 20px ;
 }
 
 @media (min-width: 990px) {
