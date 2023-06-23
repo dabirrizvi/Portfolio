@@ -1,5 +1,5 @@
 <template>
-  <div class="container content row">
+  <div class="container content row" data-aos="fade-left">
     <div class="col-xxl-4 col-lg-4 col-md-0 extra-spacing" style="margin: 0;"></div>
     <div class="col-xxl-8 col-lg-8 col-md-12 content-intro">
       <h1 class="intro-mobile">Hi There !</h1>
@@ -12,7 +12,6 @@
     </div>
   </div>
 </template>
-
 <style scoped>
 .content {
   min-height: 100vh;
