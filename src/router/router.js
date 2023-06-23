@@ -9,6 +9,7 @@ import NotFound from '../components/Pages/404.vue'
 
 
 const router = createRouter({
+    history: createWebHistory(),
     routes: [
         { path: '/', component: LaunchScreen },
         { path: '/home', component: Home },
