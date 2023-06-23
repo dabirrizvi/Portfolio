@@ -34,7 +34,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.$router.push('/home');
-    }, 3000);
+    }, 4000);
   },
 };
 </script>
@@ -73,7 +73,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation-duration: 3.8s;
+  animation-duration: 5.1s;
   animation-name: loader;
   animation-fill-mode: forwards;
 }
