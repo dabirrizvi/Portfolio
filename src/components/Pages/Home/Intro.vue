@@ -9,6 +9,20 @@
         efficient and scalable software solutions that empower businesses and make a positive impact.</p>
       <button type="button" class="btn btn-outline-secondary">Download CV <i
           class="fa-solid fa-file-arrow-down"></i></button>
+      <section>
+        <!-- Facebook -->
+        <i class="fa-brands fa-facebook"></i>
+        <!-- Instagram -->
+        <i class="fa-brands fa-instagram"></i>
+        <!-- Linkedin -->
+        <i class="fa-brands fa-linkedin"></i>
+        <!-- Github -->
+        <i class="fa-brands fa-github"></i>
+        <!-- Phone -->
+        <i class="fa-solid fa-phone"></i>
+        <!-- Email -->
+        <i class="fa-solid fa-envelope"></i>
+      </section>
     </div>
   </div>
 </template>
@@ -18,7 +32,7 @@
   display: flex;
   overflow: hidden;
   margin: auto;
-  padding: 20px ;
+  padding: 20px;
 }
 
 @media (min-width: 990px) {
@@ -39,7 +53,7 @@
 
 h1,
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #FFE4C4;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
@@ -47,7 +61,7 @@ h2 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #FFE4C4;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
@@ -55,8 +69,7 @@ p {
 }
 
 .btn {
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #FFE4C4;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: #FFE4C4;
@@ -66,5 +79,11 @@ p {
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.3);
   border-color: #FFE4C4;
-}</style>
+}
+.fa-brands, .fa-solid {
+  font-size: 1.5rem;
+  padding: 30px 20px 20px 0px;
+  color: #FFE4C4;
+}
+</style>
 <script></script>
