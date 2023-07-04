@@ -27,11 +27,74 @@ export default {
       cards: [
         {
           id: 1,
-          imageSrc: "https://mdbootstrap.com/img/new/standard/city/041.webp",
-          title: "Card 1",
+          imageSrc: "",
+          title: "Robot Movememnt Automation with Computer Vision",
+          description: "Technologies used: Ardruino, Unity 3d, Vuforia",
+          hoverText: "Custom Hover Text 1"
+        },
+        {
+          id: 2,
+          imageSrc: "",
+          title: "Vue Portfolio Website",
           description: "TEST",
           hoverText: "Custom Hover Text 1"
-        }
+        },
+        {
+          id: 3,
+          imageSrc: "",
+          title: "Blood Barrier Kaggle Challenge",
+          description: "Technologies2 used: SVM",
+          hoverText: "Custom Hover Text 1"
+        },
+        {
+          id: 4,
+          imageSrc: "",
+          title: "Net World Sports - Blog Website",
+          description: "TEST",
+          hoverText: "Custom Hover Text 1"
+        },
+        {
+          id: 5,
+          imageSrc: "",
+          title: "Net World Sports - Chrome Extension",
+          description: "TEST",
+          hoverText: "Custom Hover Text 1"
+        },
+        {
+          id: 5,
+          imageSrc: "",
+          title: "Net World Sports - Vue DataCenter",
+          description: "TEST",
+          hoverText: "Custom Hover Text 1"
+        },
+        {
+          id: 6,
+          imageSrc: "",
+          title: "Speech Recognition system",
+          description: "Matlab",
+          hoverText: "Custom Hover Text 1"
+        },
+        {
+          id: 7,
+          imageSrc: "",
+          title: "Signal Kaggle Challenge",
+          description: "TEST",
+          hoverText: "Custom Hover Text 1"
+        },
+        {
+          id: 8,
+          imageSrc: "",
+          title: "Game Development Projects",
+          description: "TEST",
+          hoverText: "Custom Hover Text 1"
+        },
+        {
+          id: 9,
+          imageSrc: "",
+          title: "Prediction of parking areas availability from parking dataset using AI/ML models",
+          description: "TEST",
+          hoverText: "This project is about the prediction of parking areas from parking dataset using AI/ML models. The Dataset is comprised of around 400 on-street parking sensors that is collected over a 9-month period in Santader, Spain. This project intends to use AI/ML models to predict the expected availability of parking areas for the next hour to help the driver's searching for parking in Santader"
+        },
       ]
     };
   },
