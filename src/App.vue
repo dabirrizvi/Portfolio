@@ -35,19 +35,20 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
 
 // content
 //  Content after navbar
+  // #app{
+
+  //   background-image:
+  //   linear-gradient(
+  //   to top,
+  //   rgba(51, 65, 85, 0.9),
+  //   rgba(51, 65, 85, 0.9)
+  // ), 
+  //   url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_mobile.jpg');
+  // }
+  
 @media (max-width: 990px) {
   .content {
     padding-top: 1rem;
-  }
-  #app{
-
-    background-image:
-    linear-gradient(
-    to top,
-    rgba(51, 65, 85, 0.9),
-    rgba(51, 65, 85, 0.9)
-  ), 
-    url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_mobile.jpg');
   }
 }
 @media (min-width: 990px) {
@@ -56,12 +57,9 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
     margin: auto;
     max-width: 1200px;
   }
-  #app{
-    // background-image: url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_background.jpg');
- background-image: linear-gradient(  to top,
-    rgba(51, 65, 85, 0.9),
-    rgba(51, 65, 85, 0.9)
-  ), url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_mobile.jpg');;
-  }
+}
+
+#app{
+  background-color: #006d77;
 }
 </style>
