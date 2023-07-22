@@ -33,7 +33,7 @@
 export default {
   mounted() {
     setTimeout(() => {
-      this.$router.push('/home');
+      this.$router.push('/inprogress');
     }, 4000);
   },
 };

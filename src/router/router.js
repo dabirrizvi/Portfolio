@@ -12,10 +12,10 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', component: LaunchScreen },
-        { path: '/home', component: Home },
-        { path: '/projects', component: Projects},
-        { path: '/contact', component: ContactUs},
-        { path: '/:notFound(.*)', component: NotFound}
+        // { path: '/home', component: Home },
+        // { path: '/projects', component: Projects},
+        // { path: '/contact', component: ContactUs},
+        { path: '/:notFound(.*)', component: NotFound},
     ],
 });
 
