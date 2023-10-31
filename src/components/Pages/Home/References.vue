@@ -94,9 +94,15 @@ export default {
                     email:'mailto:aaa@bbb.com'
                 },
                 {
-                    name: 'Dr. Edel Sheratt',
-                    description: 'Description for Dr. Edel Sheratt',
-                    position: 'Position for Dr. Edel Sheratt',
+                    name: 'Dr. Edel Sherratt',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est molestiae aperiam aliquid illum in, deserunt vero quidem facilis, id, libero voluptatibus possimus. Impedit aliquam culpa qui beatae dolore dicta?',
+                    position: 'Lecturer, Department of Computer Science, Aberystwyth University ',
+                    image: 'https://t4.ftcdn.net/jpg/02/22/39/63/360_F_222396357_KlP0TQwV3X1U6rJWzlLcIpJ7ZLpxGcQR.jpg'
+                },
+                {
+                    name: 'Dr Yasir Saleem Shaikh',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit est molestiae aperiam aliquid illum in, deserunt vero quidem facilis, id, libero voluptatibus possimus. Impedit aliquam culpa qui beatae dolore dicta?',
+                    position: 'Lecturer, Department of Computer Science, Aberystwyth University',
                     image: 'https://t4.ftcdn.net/jpg/02/22/39/63/360_F_222396357_KlP0TQwV3X1U6rJWzlLcIpJ7ZLpxGcQR.jpg'
                 },
                 {
