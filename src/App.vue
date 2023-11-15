@@ -11,18 +11,21 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 // To create parallax effect
 #app{
-  color: #fefae0;
-  //  /* Full height */
+  background-image:
+        linear-gradient(to top,
+            rgba(51, 65, 85, 0.9),
+            rgba(51, 65, 85, 0.9)),
+        url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_mobile.jpg');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9999;
     min-height: 100vh;
     max-height:max-content;
-   /* Create the parallax scrolling effect */
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     z-index: -999;
+  color: #fefae0;
 }
-
 
 
 // Headers
@@ -33,33 +36,4 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
   font-family: "Fira sans", sans-serif;
 }
 
-// content
-//  Content after navbar
-  // #app{
-
-  //   background-image:
-  //   linear-gradient(
-  //   to top,
-  //   rgba(51, 65, 85, 0.9),
-  //   rgba(51, 65, 85, 0.9)
-  // ), 
-  //   url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_mobile.jpg');
-  // }
-  
-@media (max-width: 990px) {
-  .content {
-    padding-top: 1rem;
-  }
-}
-@media (min-width: 990px) {
-  .content {
-    padding-top: 1rem;
-    margin: auto;
-    max-width: 1200px;
-  }
-}
-
-#app{
-  background-color: #006d77;
-}
 </style>
