@@ -2,7 +2,9 @@
     <div class="references">
         <div class="row">
             <h2 class="heading">Referees</h2>
+            <span> *Available on request</span>
         </div>
+        <section style="display: none;">
         <div class="row container-fluid">
             <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                 <li v-for="(referee, index) in referees" :key="index" class="nav-item">
@@ -76,6 +78,9 @@
                 </div>
             </div>
         </div>
+
+
+    </section>
     </div>
 </template>
 
@@ -126,7 +131,7 @@ export default {
   
 <style lang="scss" scoped>
 .references {
-    background-color: #ffcdb2;
+    background-color: #264653;
     overflow: hidden;
     padding: 50px 0px;
 }
@@ -185,6 +190,9 @@ hr {
     }
 }
 a{
-    color: #fefae0;
+    color: #edf6f9;
+}
+span{
+    text-align: center;
 }
 </style>
