@@ -1,30 +1,8 @@
 <template>
   <div class="container content row" data-aos="fade-left">
-    <div class="col-1">
-      <section>
-        <!-- Linkedin -->
-        <i class="fa-brands fa-linkedin"></i>
-        <br />
-        <!-- Github -->
-        <i class="fa-brands fa-github"></i>
-        <br />
-        <!-- Phone -->
-        <i class="fa-solid fa-phone"></i>
-        <br />
-        <!-- Email -->
-        <i class="fa-solid fa-envelope"></i>
-        <br />
-        <!-- Facebook -->
-        <i class="fa-brands fa-facebook"></i>
-        <br />
-        <!-- Instagram -->
-        <i class="fa-brands fa-instagram"></i>
-        <br />
-      </section>
-    </div>
-    <div class="col-11">
+    <div class="col-xxl-10 col-md-12" style="padding-left: 0px;">
       <div class="heading-intro">
-        <h2>Hi! My Name is Dabir Hasan Rizvi.</h2>
+        <h2 >Hi! My Name is Dabir Hasan Rizvi.</h2>
       </div>
       <div class="intro-content">
         <p>
@@ -43,20 +21,47 @@
       <button type="button" class="btn btn-outline-secondary">Download CV <i
           class="fa-solid fa-file-arrow-down"></i></button>
     </div>
+    <div class="col-xxl-1 col-md-12"></div>
+
+    <div class="col-xxl-1 col-md-12">
+      <ul>
+        <li>
+          <!-- Linkedin -->
+          <i class="fa-brands fa-linkedin"></i>
+        </li>
+        <li>
+          <!-- Github -->
+          <i class="fa-brands fa-github"></i>
+        </li>
+        <li>
+          <!-- Phone -->
+          <i class="fa-solid fa-phone"></i>
+        </li>
+        <li>
+          <!-- Email -->
+          <i class="fa-solid fa-envelope"></i>
+        </li>
+        <li>
+          <!-- Instagram -->
+          <i class="fa-brands fa-instagram"></i>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
+
 <style scoped>
 .content {
   display: flex;
   overflow: hidden;
   margin: auto;
   max-width: 1200px;
+  min-height: 100vh;
   margin: auto;
   padding: 0;
+  align-items: center;
 }
-
-h1,
-h2 {
+.heading-intro > h2{
   font-size: 2rem;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -64,7 +69,7 @@ h2 {
 
 }
 
-p {
+.intro-content >p {
   font-size: 1.2rem;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -88,8 +93,24 @@ p {
 .fa-brands,
 .fa-solid {
   font-size: 2rem;
-  padding: 2rem 0px;
   color: #FFE4C4;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Display list items vertically */
+  justify-content: space-evenly; /* Space items evenly */
+}
+li{
+  padding: 2rem 0;
+}
+
+@media (max-width: 1400px) {
+  ul{
+    flex-direction: row;
+  }
+}
+
 </style>
 <script></script>
