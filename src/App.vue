@@ -25,6 +25,7 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
     min-height: 100vh;
     max-height:max-content;
   color: #fefae0;
+  overflow-x:hidden;
 }
 
 
