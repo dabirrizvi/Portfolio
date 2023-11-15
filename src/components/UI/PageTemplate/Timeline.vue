@@ -119,7 +119,7 @@ export default {
 
 .title {
   margin-left: 5rem;
-  color: #333;
+  color: #f7e1d7;
 }
 
 @media (max-width: 990px) {
@@ -141,5 +141,6 @@ li {
   font-size: 1rem;
   line-height: 30px;
   color: #333;
-}</style>
+}
+</style>
   

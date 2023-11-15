@@ -9,7 +9,7 @@
         <MDBCol lg="6" md="12" class="mb-4 mb-md-0">
           <h5>About Me</h5>
           <p>
-            I am a passionate software developer, driven by the desire to create innovative solutions and simplify complex problems. With a solid foundation in programming languages and a strong problem-solving mindset, I strive to craft efficient and scalable software solutions that empower businesses and make a positive impact.
+            Result-driven Software Developer with strong academic credentials and over a year of experience working in agile teams to develop web-based applications. Proficient in object-oriented programming with a strong research interest in computer vision. Technologically savvy and a drive to excel, I am eager to contribute effectively to the organisation’s success.
           </p>
         </MDBCol>
         <MDBCol lg="2" md="12" class="mb-4 mb-md-0"></MDBCol>

@@ -33,7 +33,7 @@
 export default {
   mounted() {
     setTimeout(() => {
-      this.$router.push('/inprogress');
+      this.$router.push('/home');
     }, 4000);
   },
 };
@@ -62,7 +62,7 @@ export default {
 }
 }
 #loader {
-  background-color: #006d77;
+  background-color: #2C3E50;
   /* Bright background color */
   left: -100%;
   bottom: 0;

@@ -2,15 +2,17 @@
   <Intro />
   <Career />
   <Skills />
+  <About />
   <Certificates />
   <References />
-  <Footer />
+  <Footer></Footer>
 </template>
 
 <script setup>
 import Intro from "./Intro.vue"
 import Career from "./Career.vue"
 import Skills from "./Skills.vue"
+import About from "./About.vue"
 import Certificates from "./Certificates.vue"
 import References from "./References.vue"
 import Footer from "../../UI/PageTemplate/Footer.vue"
