@@ -1,9 +1,11 @@
 <template>
     <div class="background container-fluid ">
-            <h1>Technical Skills</h1>
+      <div class="row">
+            <h2 class="heading">Technical Skills</h2>
+        </div>
       <div class="row container-fluid">
         <div class="col-xxl-4 col-lg-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" >
-          <h2>{{ headings[columnIndex] }}</h2>
+          <h4 class="heading">{{ headings[columnIndex] }}</h4>
           <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper" :pagination="true" :observer="true" :navigation="true">
             <swiper-slide v-for="(image, imageIndex) in column.images" :key="imageIndex">
               <div class="image-wrapper" :style="{ backgroundColor: image.color }">
@@ -41,6 +43,7 @@
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/JAVA.svg', color: '#fff' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/Python.svg', color: '#c7f9cc' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C.svg', color: '#f1faee' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/Csharp.svg', color: '#f1faee' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C++.png', color: '#fff3b0' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/R.svg', color: '#e0e1dd' },
             ],
@@ -48,12 +51,13 @@
           {
             images: [
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Vue.svg', color: '#f7ede2' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Dotnet.svg', color: '#fff' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/HTML.svg', color: '#f3722c' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/CSS.svg', color: '#4ea8de' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Bootstrap.svg', color: '#7678ed' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Sass.svg', color: '#e9ecef' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Talwind.svg', color: '#fff3b0' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Wordpress.svg', color: '#e0c3fc' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Wordpress.svg', color: '#fff' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Magento.svg', color: '#f1dca7' },
             ],
           },
@@ -81,19 +85,16 @@
   .card {
     padding: 30px;
     border: none;
-    background-color: #f1f1f1;
+    background-color: #22333b;
 
   }
   .background {
-    background-color: #f1f1f1;
+    background-color: #22333b;
     overflow: hidden;
   }
-  h2,h1 {
+  h2,h3,h4 {
     text-align: center;
-    color: #333;    
-  }
-  h1{
-    padding-top: 20px;
+    color: #edf6f9;    
   }
   .swiper {
     width: 220px;
