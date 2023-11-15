@@ -1,5 +1,8 @@
 <template>
     <div class="background-certificate">
+        <div class="row">
+            <h2 class="heading">Certification Courses</h2>
+        </div>
         <div class="certificate-template" data-aos="fade-left">
             <swiper :effect="'coverflow'" :grabCursor="true" :centeredSlides="true" :slidesPerView="'auto'"
                 :coverflowEffect="{
@@ -9,13 +12,13 @@
                     modifier: 1,
                     slideShadows: true,
                 }" :pagination="true" :navigation="true" :modules="modules" class="mySwiper" :observer="true">
-                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/devops.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/vue.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/ML.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/Deeplearning.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/AI.jpg" /></swiper-slide>
-                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/GameDev.jpg" /></swiper-slide>
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/devops.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/c.jpg" /></swiper-slide>
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/GameDev.jpg" /></swiper-slide>
             </swiper>
         </div>
     </div>
@@ -48,6 +51,10 @@ export default {
 }
 .certificate-template{
     align-items: center;
-    padding: 150px 0px;
+    padding: 50px 0px;
+}
+.heading{
+    text-align: center;
+    margin-top: 100px;
 }
 </style>
