@@ -17,8 +17,7 @@
           that reflect my dedication to the ever-evolving fields of software development and AI/ML.
         </p>
       </div>
-      <button @click="downloadPDF" type="button" class="btn">Download CV <i
-          class="fa-solid fa-file-arrow-down"></i></button>
+      <button type="button" class="btn" @click="downloadCV">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
     </div>
     <div class="col-xxl-1 col-md-12"></div>
     <div class="col-xxl-1 col-md-12">
@@ -52,18 +51,14 @@
 export default {
   methods: {
     downloadCV() {
-      // Get the correct path to the PDF using require
-      const pdfPath = require('../../../assets/CV.pdf');
-      
-      // Create a link element
+      const pdfPath = import.meta.env.BASE_URL + 'src/assets/cv.pdf';
       const link = document.createElement('a');
       link.href = pdfPath;
-      link.download = 'CV.pdf';
-      // Trigger a click on the link to start the download
+      link.download = 'cv.pdf';
       link.click();
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
