@@ -51,7 +51,10 @@
 export default {
   methods: {
     downloadCV() {
-      const pdfPath = import.meta.env.BASE_URL + 'src/assets/cv.pdf';
+      const pdfPath = process.env.NODE_ENV === 'production'
+        ? '/src/assets/cv.pdf'  // Adjust the path based on your project structure
+        : import.meta.env.BASE_URL + 'src/assets/cv.pdf';
+
       const link = document.createElement('a');
       link.href = pdfPath;
       link.download = 'cv.pdf';
