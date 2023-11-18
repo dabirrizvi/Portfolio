@@ -25,23 +25,24 @@
       <ul>
         <li>
           <!-- Linkedin -->
-          <i class="fa-brands fa-linkedin fa-socials"></i>
+          <a target="_blank" href="https://www.linkedin.com/in/dabir-hasan-rizvi-738a83185/"><i class="fa-brands fa-linkedin fa-socials"></i></a>
         </li>
+        
         <li>
           <!-- Github -->
-          <i class="fa-brands fa-github fa-socials"></i>
+          <a target="_blank" href="https://github.com/dabirrizvi"><i class="fa-brands fa-github fa-socials"></i></a>
         </li>
         <li>
           <!-- Phone -->
-          <i class="fa-solid fa-phone fa-socials"></i>
+          <a href="tel:+44(0)7737906374"><i class="fa-solid fa-phone fa-socials"></i></a>
         </li>
         <li>
           <!-- Email -->
-          <i class="fa-solid fa-envelope fa-socials"></i>
+          <a href="mailto:dabir.rizvi@gmail.com?subject=General%20Inquiry&body=Hi%20Dabir,"><i class="fa-solid fa-envelope fa-socials"></i></a>
         </li>
         <li>
           <!-- Instagram -->
-          <i class="fa-brands fa-instagram fa-socials"></i>
+          <a target="_blank" href="https://www.instagram.com/dabirrizvi/"><i class="fa-brands fa-instagram fa-socials"></i></a>
         </li>
       </ul>
     </div>
