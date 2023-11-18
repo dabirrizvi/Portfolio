@@ -17,8 +17,10 @@
           that reflect my dedication to the ever-evolving fields of software development and AI/ML.
         </p>
       </div>
-      <button type="button" class="btn" @click="downloadCV">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
-    </div>
+      <a :href="pdfPath" download="cv.pdf">
+    <button type="button" class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
+  </a>
+ </div>
     <div class="col-xxl-1 col-md-12"></div>
     <div class="col-xxl-1 col-md-12">
       <ul>
@@ -49,17 +51,12 @@
 </template>
 <script>
 export default {
-  methods: {
-    downloadCV() {
-      const pdfPath = process.env.NODE_ENV === 'production'
-        ? '/src/assets/cv.pdf'  // Adjust the path based on your project structure
-        : import.meta.env.BASE_URL + 'src/assets/cv.pdf';
-
-      const link = document.createElement('a');
-      link.href = pdfPath;
-      link.download = 'cv.pdf';
-      link.click();
-    },
+  data() {
+    return {
+      pdfPath: process.env.NODE_ENV === 'production'
+        ? '/src/assets/cv.pdf'  
+        : import.meta.env.BASE_URL + 'src/assets/cv.pdf',
+    };
   },
 };
 </script>
