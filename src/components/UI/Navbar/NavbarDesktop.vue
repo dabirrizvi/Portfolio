@@ -46,24 +46,24 @@ const mailLink = computed(() => {
 .logo {
   font-weight: bold;
   font-size: 2rem;
-  color: #fff;
+  color: #f8f9fa;
 }
 
 .routing {
   text-decoration: none;
   padding: 0.5rem;
   margin: 0 1rem;
-  color: #fff;
+  color: #f8f9fa;
   transition: color 0.3s;
   position: relative;
 }
 
 .routing:hover {
-  color: #fdfcdc;
+  color: #ffe4c4;
 }
 
 .routing.active {
-  color: #fdfcdc;
+  color: #ffe4c4;
 }
 
 .routing.active::after {
@@ -73,7 +73,7 @@ const mailLink = computed(() => {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #fdfcdc;
+  background-color: #ffe4c4;
 }
 .logo, .heading{
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;

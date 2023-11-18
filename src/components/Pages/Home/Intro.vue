@@ -66,7 +66,7 @@
 }
 .heading-intro > h2{
   font-size: 2rem;
-  color: #fff;
+  color: #f8f9fa;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
   padding: 0px 10px 50px 0px;
@@ -74,7 +74,7 @@
 
 .intro-content >p {
   font-size: 1rem;
-  color: #fff;
+  color: #f8f9fa;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-family: 'Roboto', sans-serif;
 text-align: justify;
@@ -88,7 +88,7 @@ text-align: justify;
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid #333;
   border-radius: 25px;
-  color: #fff;
+  color: #f8f9fa;
   padding: 10px 20px;
   font-size: 1.5rem;
   cursor: pointer;
@@ -129,7 +129,7 @@ background-color: rgba(255, 228, 196, 0.4);
 
 .fa-socials{
   font-size: 2rem;
-  color: #fff;
+  color: #f8f9fa;
 }
 ul {
   list-style: none;

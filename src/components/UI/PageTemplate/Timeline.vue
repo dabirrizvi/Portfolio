@@ -75,7 +75,7 @@ export default {
   left: 1.5rem;
   /* Adjust this value based on your design */
   width: 4px;
-  background-color: #000;
+  background-color: #323d4f;
 }
 
 .cd-timeline-block {
@@ -96,7 +96,7 @@ export default {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: #fff;
+  background: #f8f9fa;
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
@@ -142,10 +142,56 @@ h1 {
 li {
   font-size: 0.9rem;
   line-height: 30px;
-  color: #323d4f;
+  color: rgba(50,61,79);
   font-family: 'Roboto', sans-serif;
   }
 
 
   // Custom accordion styling
+  /* Custom styles for Bootstrap accordion */
+.accordion {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  background-color: rgba(50,61,79,0.15);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+/* Remove default Bootstrap button icon */
+.accordion{
+  --bs-accordion-btn-icon: none;
+  --bs-accordion-btn-active-icon:none
+}
+.accordion-button {
+  background-color: rgba(50,61,79,0.8);
+  color: #f8f9fa;
+  position: relative; 
+}
+
+.accordion-button::after {
+  content: '\f107';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+  transform-origin:left; /* Set the transform origin to the right */
+  transition: transform 0.2s ease-in-out; /* Add a transition for a smooth effect */
+}
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  background-color: rgba(50,61,79,1);
+}
+
+.accordion-body {
+  padding: 15px;
+}
+
 </style>
