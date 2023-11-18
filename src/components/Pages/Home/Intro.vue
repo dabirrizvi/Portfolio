@@ -19,7 +19,7 @@
       </div>
       <a :href="pdfPath" download="cv.pdf">
     <button type="button" class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
-  </a>
+  </a> 
  </div>
     <div class="col-xxl-1 col-md-12"></div>
     <div class="col-xxl-1 col-md-12">
@@ -54,15 +54,15 @@ export default {
   data() {
     return {
       pdfPath: process.env.NODE_ENV === 'production'
-        ? '/src/assets/cv.pdf'  
-        : import.meta.env.BASE_URL + 'src/assets/cv.pdf',
+        ? `${import.meta.env.BASE_URL}assets/cv.pdf`
+        : '/src/assets/cv.pdf',
     };
   },
 };
 </script>
 
 <style scoped>
-.content {
+.content { 
   display: flex;
   overflow: hidden;
   margin: auto;
