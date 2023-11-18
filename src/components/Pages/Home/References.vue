@@ -131,7 +131,7 @@ export default {
   
 <style lang="scss" scoped>
 .references {
-    background-color: #264653;
+    background-color: #ffe4c4;
     overflow: hidden;
     padding: 50px 0px;
 }
@@ -194,5 +194,12 @@ a{
 }
 span{
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #323d4f;
 }
+h2{
+    font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+    color: #323d4f;
+}
+
 </style>

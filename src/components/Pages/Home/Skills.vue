@@ -85,14 +85,21 @@
   .card {
     padding: 30px;
     border: none;
-    background-color: #22333b;
+    background-color: #28282B;
 
   }
   .background {
-    background-color: #22333b;
+    background-color: #28282B;
     overflow: hidden;
   }
-  h2,h3,h4 {
+  h2{
+    font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+
+  }
+  h4{
+    font-family: 'Roboto', sans-serif;
+  }
+  h2,h4 {
     text-align: center;
     color: #edf6f9;    
   }
