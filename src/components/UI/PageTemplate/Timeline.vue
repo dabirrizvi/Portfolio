@@ -56,6 +56,7 @@ export default {
 
   
 <style lang="scss" scoped>
+// content styling
 .content {
   padding-top: 0px;
 }
@@ -112,14 +113,13 @@ export default {
   position: relative;
   margin-left: 5rem;
   padding: 1rem;
-  border-radius: 0.25rem;
-  background-color: #f1f1f1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .title {
   margin-left: 5rem;
-  color: #f7e1d7;
+  color: #323d4f;
+  font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+
 }
 
 @media (max-width: 990px) {
@@ -133,14 +133,19 @@ export default {
 h1 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #323d4f;
+  font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
 }
+
 
 .cd-timeline-content p,
 li {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 30px;
-  color: #333;
-}
+  color: #323d4f;
+  font-family: 'Roboto', sans-serif;
+  }
+
+
+  // Custom accordion styling
 </style>
-  
