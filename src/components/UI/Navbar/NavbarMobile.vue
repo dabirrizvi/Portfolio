@@ -22,11 +22,6 @@
                                 <span class="text">Projects</span>
                             </router-link>
                         </li>
-                        <li>
-                            <router-link to="/contact" class="button">
-                                <span class="text">Contact</span>
-                            </router-link>
-                        </li>
                     </ul>
                 </div>
             </MDBCollapse>
