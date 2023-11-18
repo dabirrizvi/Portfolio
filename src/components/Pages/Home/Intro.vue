@@ -17,7 +17,7 @@
           that reflect my dedication to the ever-evolving fields of software development and AI/ML.
         </p>
       </div>
-      <button type="button" class="btn">Download CV <i
+      <button @click="downloadPDF" type="button" class="btn">Download CV <i
           class="fa-solid fa-file-arrow-down"></i></button>
     </div>
     <div class="col-xxl-1 col-md-12"></div>
@@ -48,6 +48,16 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    downloadPDF() {
+      const pdfPath = process.env.BASE_URL + '../../../assets/CV.pdf';
+      window.open(pdfPath, '_blank');
+    }
+  }
+};
+</script>
 
 <style scoped>
 .content {
