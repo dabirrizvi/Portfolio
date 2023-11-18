@@ -36,7 +36,7 @@ export default {
         {
           id: '3',
           name: 'Net World Sports Ltd.',
-          date: 'July 2022 - Present',
+          date: 'July 2022 - June 2023',
           title: 'Junior Web Developer',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/nws.jpg',
           description: 'Full-Time (Industrial Year)',
