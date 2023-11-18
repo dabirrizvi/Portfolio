@@ -51,12 +51,19 @@
 <script>
 export default {
   methods: {
-    downloadPDF() {
-      const pdfPath = process.env.BASE_URL + '../../../assets/CV.pdf';
-      window.open(pdfPath, '_blank');
+    downloadCV() {
+      // Get the correct path to the PDF using require
+      const pdfPath = require('../../../assets/CV.pdf');
+      
+      // Create a link element
+      const link = document.createElement('a');
+      link.href = pdfPath;
+      link.download = 'CV.pdf';
+      // Trigger a click on the link to start the download
+      link.click();
     }
   }
-};
+}
 </script>
 
 <style scoped>
