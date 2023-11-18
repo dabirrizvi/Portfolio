@@ -6,24 +6,18 @@
       <!--Grid row-->
       <MDBRow>
         <!--Grid column-->
-        <MDBCol lg="6" md="12" class="mb-4 mb-md-0">
-          <h5>About Me</h5>
-          <p>
-            Result-driven Software Developer with strong academic credentials and over a year of experience working in agile teams to develop web-based applications. Proficient in object-oriented programming with a strong research interest in computer vision. Technologically savvy and a drive to excel, I am eager to contribute effectively to the organisation’s success.
-          </p>
+        <MDBCol lg="7" md="12" class="mb-4 mb-md-0">
+          <Form />
         </MDBCol>
-        <MDBCol lg="2" md="12" class="mb-4 mb-md-0"></MDBCol>
+        <MDBCol lg="1" md="12" class="mb-4 mb-md-0"></MDBCol>
         <!--Grid column-->
-        <MDBCol lg="4" md="12" class="mb-4 mb-md-0">
-          <h5>Get in touch</h5>
-          <p>+44 (0) 7737906374</p>
-          <p>dabir.rizvi@gmail.com </p>
-          <p>
+
+        <MDBCol lg="4" md="12" class="mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center"
+          style="padding-top: 100px;">
+          <h2>Dabir Hasan Rizvi</h2>
+          <p>Software Developer</p>
+          <p style="margin: 50px 0px;">
           <section class="mb-4 fa-icons-section">
-            <!-- Facebook -->
-            <i class="fa-brands fa-facebook"></i>
-            <!-- Instagram -->
-            <i class="fa-brands fa-instagram"></i>
             <!-- Linkedin -->
             <i class="fa-brands fa-linkedin"></i>
             <!-- Github -->
@@ -32,9 +26,12 @@
             <i class="fa-solid fa-phone"></i>
             <!-- Email -->
             <i class="fa-solid fa-envelope"></i>
+            <!-- Instagram -->
+            <i class="fa-brands fa-instagram"></i>
           </section>
           </p>
         </MDBCol>
+
       </MDBRow>
       <!--Grid row-->
     </MDBContainer>
@@ -49,33 +46,43 @@
   <!-- Footer -->
 </template>
 <script>
+import Form from "../../UI/PageTemplate/Form.vue";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-vue-ui-kit';
 export default {
   components: {
     MDBFooter,
     MDBContainer,
     MDBRow,
-    MDBCol
+    MDBCol,
+    Form
   },
 };
 </script>
 <style scoped>
-.row{
-  padding: 100px 0px;
-  line-height: 35px;
+.row {
+  padding: 50px 0px 100px 0px;
+  line-height: 20px;
 }
-.fa-brands, .fa-solid {
-  font-size: 25px;
+
+.fa-brands,
+.fa-solid {
+  font-size: 200%;
   padding: 10px 20px 20px 0px;
+}
+.fa-brands:hover,.fa-solid:hover{
+    color: #FFE4C4; 
 }
 
 @media (max-width:768px) {
-  .fa-brands,.fa-solid {
+
+  .fa-brands,
+  .fa-solid {
     padding: 10px 15px 15px 10px;
   }
 }
-h5{
-  padding: 20px 0px;
-}
 
+h2 {
+  font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
 </style>
