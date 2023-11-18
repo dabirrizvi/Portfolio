@@ -57,7 +57,7 @@ export default {
         ? `${import.meta.env.BASE_URL}assets/cv.pdf`
         : '/src/assets/cv.pdf',
     };
-  },
+  }, 
 };
 </script>
 
