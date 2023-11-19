@@ -17,9 +17,10 @@
           that reflect my dedication to the ever-evolving fields of software development and AI/ML.
         </p>
       </div>
-      <a :href="pdfDownloadUrl" download="cv.pdf">
-            <button type="button" class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
-  </a> 
+  <a href="https://github.com/dabirrizvi/assets_for_portfolio/raw/main/CV/CV.pdf" download="cv.pdf">
+    <button type="button" class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
+  </a>
+
  </div>
     <div class="col-xxl-1 col-md-12"></div>
     <div class="col-xxl-1 col-md-12">
@@ -49,17 +50,6 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      pdfDownloadUrl: process.env.NODE_ENV === 'production'
-        ? '/.netlify/functions/downloadPdf'
-        : 'http://localhost:5173/.netlify/functions/downloadPdf',
-    };
-  },
-};
-</script>
 
 <style scoped>
 .content { 
