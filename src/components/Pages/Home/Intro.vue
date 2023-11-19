@@ -17,8 +17,8 @@
           that reflect my dedication to the ever-evolving fields of software development and AI/ML.
         </p>
       </div>
-      <a :href="pdfPath" download="cv.pdf">
-    <button type="button" class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
+      <a :href="pdfDownloadUrl" download="cv.pdf">
+            <button type="button" class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
   </a> 
  </div>
     <div class="col-xxl-1 col-md-12"></div>
@@ -53,11 +53,11 @@
 export default {
   data() {
     return {
-      pdfPath: process.env.NODE_ENV === 'production'
-        ? `${import.meta.env.BASE_URL}assets/cv.pdf`
-        : '/src/assets/cv.pdf',
+      pdfDownloadUrl: process.env.NODE_ENV === 'production'
+        ? '/.netlify/functions/downloadPdf'
+        : 'http://localhost:5173/.netlify/functions/downloadPdf',
     };
-  }, 
+  },
 };
 </script>
 
