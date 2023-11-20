@@ -203,4 +203,8 @@ export default {
 .arrow-container i {
   font-size: 24px;
   color: #000;
-}</style>
+}
+html {
+  scroll-behavior: smooth;
+}
+</style>
