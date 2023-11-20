@@ -1,5 +1,5 @@
 <template>
-    <section class="mb-3">
+    <section class="mb-3" style="padding-bottom: 3rem ;">
         <section class="mb-3">
             <MDBNavbar dark bg="dark" container class="justify-content-end sticky-top">
                 <button @click="collapse9 = !collapse9" class="navbar-toggler first-button" :aria-expanded="collapse9"
@@ -13,12 +13,12 @@
                 <div class="bg-dark shadow-3 p-4">
                     <ul>
                         <li>
-                            <router-link to="/home" class="button">
+                            <router-link to="/home" class="button" active-class="active-link">
                                 <span class="text">Home</span>
                             </router-link>
                         </li>
                         <li>
-                            <router-link to="/projects" class="button">
+                            <router-link to="/projects" class="button" active-class="active-link">
                                 <span class="text">Projects</span>
                             </router-link>
                         </li>
@@ -77,7 +77,8 @@ export default {
 }
 
 .animated-icon1 span {
-    background: #2d7ef7;
+    background: #f8f9fa;
+
 }
 
 .animated-icon1 span:nth-child(1) {
@@ -130,6 +131,43 @@ export default {
 .sticky-top {
     width: 100%;
     top: 0;
+}
+
+/* hover effect to the text inside router-link */
+.button {
+    text-decoration: none;
+    color: #f8f9fa;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #FFE4C4;
+    }
+}
+
+.bg-dark {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin: 30px 0px;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.active-link {
+    color: #FFE4C4;
+    font-weight: bold;
+    border-bottom: 2px solid #FFE4C4;
+}
+
+
+.text{
+    font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+
 }
 </style>
   

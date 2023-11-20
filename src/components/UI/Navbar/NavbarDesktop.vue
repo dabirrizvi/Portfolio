@@ -1,19 +1,23 @@
 <template>
   <div class="desktop-header">
     <div class="desktop-navbars">
-      <router-link to="/" active-class="active" style="text-decoration: none;">
-        <span class="logo">Dabir Hasan Rizvi</span>
-      </router-link>
+      <kinesis-container>
+        <kinesis-element :strength="0.5" type="rotate" transformOrigin="50% 300%" axis="x">
+          <router-link to="/" active-class="active" style="text-decoration: none;">
+            <span class="logo">Dabir Hasan Rizvi</span>
+          </router-link>
+        </kinesis-element>
+      </kinesis-container>
 
     </div>
     <div class="desktop-navbars">
-      <!-- Routing -->
-      <router-link to="/home" class="routing" active-class="active">
-        <span class="heading">Home</span>
-      </router-link>
+          <!-- Routing -->
+          <router-link to="/home" class="routing" active-class="active">
+            <span class="heading">Home</span>
+          </router-link>
       <router-link to="/projects" class="routing" active-class="active">
         <span class="heading">Projects</span>
-      </router-link> 
+      </router-link>
     </div>
   </div>
   <!-- router animation -->
@@ -40,6 +44,7 @@ const mailLink = computed(() => {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   font-weight: bold;
   font-size: 2rem;
@@ -53,6 +58,7 @@ const mailLink = computed(() => {
   color: #f8f9fa;
   transition: color 0.3s;
   position: relative;
+  font-size: 1.2rem;
 }
 
 .routing:hover {
@@ -72,7 +78,9 @@ const mailLink = computed(() => {
   height: 2px;
   background-color: #ffe4c4;
 }
-.logo, .heading{
+
+.logo,
+.heading {
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
 }
 </style>
