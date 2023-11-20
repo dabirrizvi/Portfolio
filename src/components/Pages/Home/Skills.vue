@@ -56,6 +56,7 @@
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C.svg', color: '#f1faee' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/Csharp.svg', color: '#f1faee' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C++.png', color: '#fff3b0' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/PHP.svg', color: '#415a77' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/R.svg', color: '#e0e1dd' },
             ],
           },
