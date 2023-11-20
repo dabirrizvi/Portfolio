@@ -42,7 +42,7 @@ export default {
 <style lang="scss" scoped>
 .title,
 .subtitle {
-  color: #fff;
+  color: #f8f9fa;
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
   text-align: center;
   font-weight: bold;

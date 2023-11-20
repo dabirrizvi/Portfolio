@@ -77,7 +77,7 @@ export default {
 }
 
 .animated-icon1 span {
-    background: #f8f9fa;
+    background: #FFE4C4;
 
 }
 
