@@ -79,14 +79,15 @@ h3 {
     padding: 100px 0px;
 }
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
-
 }
 
 h3 {
     text-align: center;
     font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #ffe4c4;
 }
 .img-content{
     display: flex;
