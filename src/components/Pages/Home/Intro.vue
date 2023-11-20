@@ -1,5 +1,5 @@
 <template>
-  <div class="container content row" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+  <div class="container content row" data-aos="fade-left" >
     <div class="col-xxl-10 col-md-12" style="padding-left: 0px;">
       <div class="heading-intro">
         <h2>Hi! My Name is Dabir Hasan Rizvi.</h2>

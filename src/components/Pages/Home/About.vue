@@ -4,13 +4,13 @@
         <div class="col-xxl-7 col-lg-7 col-md-12 content-intro">
                 <h3>About Me</h3>
                 <section class="about-content">
-                <p>
+                <p data-aos="fade-left"  data-aos-easing="ease-in-sine">
                     I thrive at the intersection of creativity and data-driven problem-solving, where technology becomes a
                     powerful tool for innovation. My academic journey has provided me with a robust foundation in computer
                     science, enabling me to excel in various domains of software development. My practical experience in
                     agile teams has honed my ability to collaborate, adapt, and deliver real-world solutions.
                 </p>
-                <p>
+                <p data-aos="fade-right"  data-aos-easing="ease-in-sine">
                     One of my true passions is the realm of artificial intelligence and machine learning. I'm captivated by
                     the potential of AI and ML to transform industries and improve our lives. My foray into this field has
                     been marked by a commitment to staying at the forefront of these technologies and applying them to
@@ -18,19 +18,19 @@
                     modelling, I'm always eager to explore the boundaries of AI/ML and harness their power for practical
                     applications.
                 </p>
-                <p>
+                <p data-aos="fade-left"  data-aos-easing="ease-in-sine">
                     As a technologically-savvy individual, I embrace each project as an opportunity to learn, innovate, and
                     contribute to the success of organisations and teams. Collaboration, problem-solving, and creative
                     thinking are the driving forces behind my work. Whether it's developing a web application or creating a
                     machine learning model, I approach each task with enthusiasm and a commitment to excellence.
                 </p>
-                <p>
+                <p data-aos="fade-right"  data-aos-easing="ease-in-sine">
                     I invite you to explore my portfolio to gain insight into the projects and experiences that have shaped
                     my journey. Whether you're interested in collaboration, have an exciting project idea, or simply want to
                     connect with a passionate software developer and AI/ML enthusiast, don't hesitate to reach out.
                 </p>
             </section>
-            <p class="img-content">
+            <p class="img-content" data-aos="fade-right"  data-aos-easing="ease-in-sine">
       <img class="img-logo" :src="images[0].src" @click="redirectToPage(images[0].link)" alt="Aber Image" />
       <img class="img-logo" :src="images[1].src" @click="redirectToPage(images[1].link)" alt="CMR Image" />
       <img class="img-logo" :src="images[2].src" @click="redirectToPage(images[2].link)" alt="RNR Image" />
