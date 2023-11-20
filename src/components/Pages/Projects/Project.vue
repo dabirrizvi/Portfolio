@@ -2,8 +2,9 @@
   <div style="overflow: hidden;">
     <First data-aos="fade-left"/>
     <Second />
+    <Third />
     <div class="background-game">
-      <Third />
+      <Fourth />
     </div>
     <Footer />
   </div>
@@ -12,6 +13,7 @@
 import First from "./First.vue"
 import Second from "./Second.vue"
 import Third from "./Third.vue"
+import Fourth from "./Fourth.vue"
 import Footer from "../../UI/PageTemplate/Footer.vue"
 </script>
 <style>
