@@ -4,6 +4,8 @@
             <h2 class="heading">Certification Courses</h2>
         </div>
         <div class="certificate-template" data-aos="fade-left">
+            <kinesis-container>
+        <kinesis-element :strength="5" type="depth">
             <swiper :effect="'coverflow'" :grabCursor="true" :centeredSlides="true" :slidesPerView="'auto'"
                 :coverflowEffect="{
                     rotate: 50,
@@ -20,6 +22,8 @@
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/c.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/GameDev.jpg" /></swiper-slide>
             </swiper>
+        </kinesis-element>
+      </kinesis-container>
         </div>
     </div>
 </template>
@@ -56,5 +60,8 @@ export default {
 .heading{
     text-align: center;
     margin-top: 100px;
+    font-size: 3rem;
+    color: #ffe4c4;
+
 }
 </style>
