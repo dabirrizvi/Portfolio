@@ -30,7 +30,7 @@
                     connect with a passionate software developer and AI/ML enthusiast, don't hesitate to reach out.
                 </p>
             </section>
-            <p class="img-content" data-aos="fade-right"  data-aos-easing="ease-in-sine">
+            <p class="img-content">
       <img class="img-logo" :src="images[0].src" @click="redirectToPage(images[0].link)" alt="Aber Image" />
       <img class="img-logo" :src="images[1].src" @click="redirectToPage(images[1].link)" alt="CMR Image" />
       <img class="img-logo" :src="images[2].src" @click="redirectToPage(images[2].link)" alt="RNR Image" />
