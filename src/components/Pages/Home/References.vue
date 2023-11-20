@@ -190,16 +190,19 @@ hr {
     }
 }
 a{
-    color: #edf6f9;
+    color: #f8f9fa;
 }
 span{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #323d4f;
+    font-size: 1rem;
 }
 h2{
     font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
     color: #323d4f;
+    font-size: 3rem;
+
 }
 
 </style>

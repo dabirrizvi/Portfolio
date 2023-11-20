@@ -8,9 +8,9 @@
           <img :src="event.image" alt="Event Image" />
         </div>
         <div class="cd-timeline-content" data-aos="fade-up">
-          <h1>{{ event.name }}</h1>
+          <h2 class="sub-heading">{{ event.name }}</h2>
           <p>{{ event.date }}</p>
-          <h2>{{ event.title }}</h2>
+          <h2 class="sub-heading">{{ event.title }}</h2>
           <p>{{ event.description }}</p>
           <!-- Bootstrap accordion -->
           <div v-if="event.list && event.list.length" :id="'accordionFlushExample' + event.id" class="accordion accordion-flush">
@@ -119,7 +119,7 @@ export default {
   margin-left: 5rem;
   color: #323d4f;
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
-
+font-size: 2rem;
 }
 
 @media (max-width: 990px) {
@@ -131,7 +131,8 @@ export default {
 
 .cd-timeline-content h2,
 h1 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
   color: #323d4f;
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
@@ -140,7 +141,7 @@ h1 {
 
 .cd-timeline-content p,
 li {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 30px;
   color: rgba(50,61,79);
   font-family: 'Roboto', sans-serif;

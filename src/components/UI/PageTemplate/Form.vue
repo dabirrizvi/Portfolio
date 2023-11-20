@@ -118,6 +118,7 @@ h2 {
     font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 0px 0px 50px 0px;
+    color: #FFE4C4;
 }
 
 .form-row {

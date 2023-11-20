@@ -6,13 +6,24 @@
       <div class="row container-fluid">
         <div class="col-xxl-4 col-lg-4 col-sm-12 card" v-for="(column, columnIndex) in columns" :key="columnIndex" >
           <h4 class="heading">{{ headings[columnIndex] }}</h4>
-          <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper" :pagination="true" :observer="true" :navigation="true">
+          <kinesis-container>
+            <kinesis-element 
+                  :strength="0.5"
+                  type="rotate"
+                  transformOrigin="50% 300%"
+                  axis="x"
+                   >
+                   <swiper :effect="'cards'" :grabCursor="true" :modules="modules" class="mySwiper" :pagination="true" :observer="true" :navigation="true">
             <swiper-slide v-for="(image, imageIndex) in column.images" :key="imageIndex">
               <div class="image-wrapper" :style="{ backgroundColor: image.color }">
                 <img :src="image.src" :alt="'Image ' + (imageIndex + 1)" />
               </div>
             </swiper-slide>
           </swiper>
+                  </kinesis-element>
+          </kinesis-container>
+
+
         </div>
       </div>
     </div>
@@ -94,14 +105,16 @@
   }
   h2{
     font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
-
+    font-size: 2rem;
+    color:#FFE4C4
   }
   h4{
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #f8f9fa;    
   }
   h2,h4 {
     text-align: center;
-    color: #edf6f9;    
   }
   .swiper {
     width: 220px;
