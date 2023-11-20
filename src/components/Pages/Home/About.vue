@@ -30,16 +30,34 @@
                     connect with a passionate software developer and AI/ML enthusiast, don't hesitate to reach out.
                 </p>
             </section>
-                <p class="img-content">
-                    <img class="img-logo" src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/aber.png"/>
-                    <img class="img-logo" src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/cmr.png"/>
-                    <img class="img-logo" src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/rnr.png"/>
-                    <img class="img-logo" src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/nws.png"/>
-                </p>
+            <p class="img-content">
+      <img class="img-logo" :src="images[0].src" @click="redirectToPage(images[0].link)" alt="Aber Image" />
+      <img class="img-logo" :src="images[1].src" @click="redirectToPage(images[1].link)" alt="CMR Image" />
+      <img class="img-logo" :src="images[2].src" @click="redirectToPage(images[2].link)" alt="RNR Image" />
+      <img class="img-logo" :src="images[3].src" @click="redirectToPage(images[3].link)" alt="NWS Image" />
+    </p>
             </div>
     </div>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      images: [
+        { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/aber.png', link: 'https://www.aber.ac.uk/en/' },
+        { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/cmr.png', link: 'https://www.cmrit.ac.in/' },
+        { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/rnr.png', link: 'https://racksandrollers.com/' },
+        { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/nws.png', link: 'https://www.networldsports.co.uk/about' },
+      ],
+    };
+  },
+  methods: {
+    redirectToPage(link) {
+        window.open(link, '_blank');
+        },
+  },
+};
+</script>
 <style lang="scss" scoped>
 .content-about {
     background-image:
