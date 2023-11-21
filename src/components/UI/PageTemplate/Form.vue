@@ -4,14 +4,14 @@
         <form @submit.prevent="submitSurvey">
             <div class="form-row">
                 <div class="form-control">
-                    <label for="name">Your Name</label>
+                    <label for="name">Your Name*</label>
                     <input type="text" id="name" name="name" v-model.trim="enteredName" placeholder="Enter your name"
                         required />
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-control">
-                    <label for="email">Email</label>
+                    <label for="email">Email*</label>
                     <input type="email" id="email" name="email" v-model.trim="enteredEmail" placeholder="Enter your email"
                         required />
                 </div>
@@ -30,7 +30,7 @@
             </div>
             <div class="form-row">
                 <div class="form-control">
-                    <label for="message">Message</label>
+                    <label for="message">Message*</label>
                     <textarea id="message" name="message" v-model.trim="enteredMessage" placeholder="Enter your message"
                         required></textarea>
                 </div>
