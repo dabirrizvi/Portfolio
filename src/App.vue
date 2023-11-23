@@ -13,6 +13,20 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
 
 // To create parallax effect
 #app{
+    z-index: -9999;
+    min-height: 100vh;
+    max-height:max-content;
+  color: #fefae0;
+  overflow-x:hidden;
+}
+@media(max-width: 767px) {
+  #app{
+    background-image: none;
+    background-color: #2C3E50;
+  }
+}
+@media(min-width: 767px){
+#app{
   background-image:
         linear-gradient(to top,
             rgba(51, 65, 85, 0.9),
@@ -23,14 +37,8 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -9999;
-    min-height: 100vh;
-    max-height:max-content;
-  color: #fefae0;
-  overflow-x:hidden;
 }
-
-
+}
 // Headers
 * {
   margin: 0;
