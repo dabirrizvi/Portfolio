@@ -29,9 +29,6 @@
 </script>
   
 <style scoped>
-.background {
-  background-color: rgba(50, 61, 79);
-}
 h2{
   font-size: 2rem;
   color: #FFE4C4;
