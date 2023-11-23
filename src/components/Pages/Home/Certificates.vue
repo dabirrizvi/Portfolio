@@ -5,7 +5,7 @@
         </div>
         <div class="certificate-template" data-aos="fade-left">
             <kinesis-container>
-        <kinesis-element :strength="5" type="depth">
+              <kinesis-element :strength="1" type="rotate">
             <swiper :effect="'coverflow'" :grabCursor="true" :centeredSlides="true" :slidesPerView="'auto'"
                 :coverflowEffect="{
                     rotate: 50,
@@ -22,8 +22,8 @@
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/c.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/GameDev.jpg" /></swiper-slide>
             </swiper>
-        </kinesis-element>
-      </kinesis-container>
+              </kinesis-element>
+            </kinesis-container>
         </div>
     </div>
 </template>
