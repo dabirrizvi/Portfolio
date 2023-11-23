@@ -73,16 +73,7 @@ export default {
     z-index: -999;
     min-height: 100vh;
 }
-@media (max-width:1400px){
-    .content-about {
-        background-image:
-        linear-gradient(to top,
-            rgba(51, 65, 85, 0.9),
-            rgba(51, 65, 85, 0.9)),
-            url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_mobile.jpg');
 
-    }
-}
 .content-intro{
     margin: auto;
     padding: 100px 20px;
