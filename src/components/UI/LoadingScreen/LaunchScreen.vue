@@ -87,14 +87,22 @@ export default {
     left: calc(50% - 50vw);
   }
 
+  50%{
+    opacity: 1;
+  }
+
   75% {
     left: calc(50% - 50vw);
+    opacity: 0.25;
   }
 
   80% {
     left: 100%;
+    opacity:0
   }
-
+90%{
+  opacity:0
+}
   100% {
     left: 100%;
   }
