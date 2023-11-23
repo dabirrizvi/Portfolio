@@ -1,5 +1,5 @@
 <template>
-    <div class="background container-fluid ">
+    <div class="background container-fluid " data-aos="fade-up">
       <div class="row">
             <h2 class="heading">Technical Skills</h2>
         </div>
