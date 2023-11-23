@@ -2,21 +2,11 @@
   <div class="container content row" data-aos="fade-left" >
     <div class="col-xxl-10 col-md-12" style="padding-left: 0px;">
       <div class="heading-intro">
-        <h2>Hi! My Name is Dabir Hasan Rizvi.</h2>
+        <h2>{{ typedHeading }}</h2>
       </div>
-      <div class="intro-content">
-        <p>
-          Welcome to my portfolio! I'm a result-driven Software Developer with a diverse skill set that encompasses
-          web-based applications, as well as artificial intelligence and machine learning. With a strong academic
-          foundation
-          and over a year of hands-on experience in agile teams, I'm dedicated to bringing creativity and efficiency to
-          the
-          world of software development. My journey has led me to become proficient in object-oriented programming, with a
-          strong emphasis on AI and ML applications. I'm technologically savvy, and my unwavering drive to excel fuels my
-          ambition to contribute effectively to any organisation's success. Explore my portfolio to discover the projects
-          that reflect my dedication to the ever-evolving fields of software development and AI/ML.
-        </p>
-      </div>      
+      <div class="intro-content" v-if="typingComplete">
+        <p>{{ introContent }}</p>
+      </div>
       <kinesis-container>
         <kinesis-element :strength="5" type="translate">
           <a href="https://github.com/dabirrizvi/assets_for_portfolio/raw/main/CV/CV.pdf" download="cv.pdf">
@@ -85,7 +75,85 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      typedHeading: '',
+      introContent: '',
+      targetText: 'Hi! My Name is Dabir Hasan Rizvi',
+      introContentText:
+        " Welcome to my portfolio! I'm a result-driven Software Developer with a diverse skill set that encompasses web-based applications, as well as artificial intelligence and machine learning. With a strong academic foundation and over a year of hands-on experience in agile teams, I'm dedicated to bringing creativity and efficiency to the world of software development. My journey has led me to become proficient in object-oriented programming, with a strong emphasis on AI and ML applications. I'm technologically savvy, and my unwavering drive to excel fuels my ambition to contribute effectively to any organisation's success. Explore my portfolio to discover the projects that reflect my dedication to the ever-evolving fields of software development and AI/ML.",
+      typeSpeed: {
+        heading: 20, // Speed for typing heading
+        intro: 10,   // Speed for typing introduction content
+      },
+      typingComplete: false,
+    };
+  },
+  mounted() {
+    this.initTyped()
+      .then(() => {
+        // Heading typing is complete
+      });
+  },
+  methods: {
+    async initTyped() {
+      return new Promise((resolve) => {
+        let index = 0;
+        const typeInterval = setInterval(() => {
+          this.typedHeading += this.targetText[index];
+          index += 1;
+
+          if (index === this.targetText.length) {
+            clearInterval(typeInterval);
+            this.blinkCursor();
+            resolve();
+          }
+        }, this.typeSpeed.heading);
+      });
+    },
+    async typeIntroContent() {
+      return new Promise((resolve) => {
+        let index = 0;
+        const typeInterval = setInterval(() => {
+          this.introContent += this.introContentText[index];
+          index += 1;
+
+          if (index === this.introContentText.length) {
+            clearInterval(typeInterval);
+            resolve();
+          }
+        }, this.typeSpeed.intro);
+      });
+    },
+    blinkCursor() {
+      this.typingComplete = true;
+      this.typeIntroContent();
+    },
+  },
+};
+</script>
+
+
 <style scoped>
+/* styling for cursor */
+.heading-intro h2::after, .intro-content p::after {
+  content: '|';
+  display: inline-block;
+  animation: blinkCursor 1s infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
 .content {
   display: flex;
   overflow: hidden;
