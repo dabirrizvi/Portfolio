@@ -75,7 +75,6 @@ export default {
   top: 0;
   bottom: 0;
   left: 1.5rem;
-  /* Adjust this value based on your design */
   width: 4px;
   background-color: #323d4f;
 }
@@ -150,7 +149,6 @@ li {
 }
 
 
-// Custom accordion styling
 /* Custom styles for Bootstrap accordion */
 .accordion {
   border-top-right-radius: 25px;
@@ -183,11 +181,11 @@ li {
   font-weight: 900;
   display: inline-block;
   position: relative;
-  transform-origin: left;
-  /* Set the transform origin to the right */
   transition: transform 0.2s ease-in-out;
-  /* Add a transition for a smooth effect */
+  transform-origin: center; 
 }
+
+
 
 .accordion-button:focus {
   box-shadow: none;
@@ -199,4 +197,5 @@ li {
 
 .accordion-body {
   padding: 15px;
-}</style>
+}
+</style>
