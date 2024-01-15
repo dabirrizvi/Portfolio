@@ -14,7 +14,7 @@ export default {
         {
           id: '1',
           name: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://www.aber.ac.uk/en/">Aberystwyth University</a>',
-          date: 'September 2021 - September 2023',
+          date: 'September 2021 - December 2023',
           title: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://courses.aber.ac.uk/postgraduate/software-engineering-integrated-industrial-year/">MSc. Advanced Computer Science (with Integrated Year in Industry)</a>',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/aber.jpg',
            description: '',
