@@ -1,10 +1,10 @@
 <template>
-  <div class="container content row" data-aos="fade-left" >
+  <div class="container content row" data-aos="fade-left">
     <div class="col-xxl-10 col-md-12" style="padding-left: 0px;">
       <div class="heading-intro">
         <h2>{{ typedHeading }}</h2>
       </div>
-      <div class="intro-content" v-if="typingComplete">
+      <div class="intro-content">
         <p>{{ introContent }}</p>
       </div>
       <kinesis-container>
@@ -43,8 +43,8 @@
         <li>
           <kinesis-container>
             <kinesis-element :strength="10" type="depth">
-          <!-- Phone -->
-          <a href="tel:+44(0)7737906374"><i class="fa-solid fa-phone fa-socials"></i></a>
+              <!-- Phone -->
+              <a href="tel:+44(0)7737906374"><i class="fa-solid fa-phone fa-socials"></i></a>
             </kinesis-element>
           </kinesis-container>
 
@@ -53,9 +53,9 @@
         <li>
           <kinesis-container>
             <kinesis-element :strength="10" type="depth">
-          <!-- Email -->
-          <a href="mailto:dabir.rizvi@gmail.com?subject=General%20Inquiry&body=Hi%20Dabir,"><i
-              class="fa-solid fa-envelope fa-socials"></i></a>
+              <!-- Email -->
+              <a href="mailto:dabir.rizvi@gmail.com?subject=General%20Inquiry&body=Hi%20Dabir,"><i
+                  class="fa-solid fa-envelope fa-socials"></i></a>
             </kinesis-element>
           </kinesis-container>
 
@@ -63,9 +63,9 @@
         <li>
           <kinesis-container>
             <kinesis-element :strength="10" type="depth">
-          <!-- Instagram -->
-          <a target="_blank" href="https://www.instagram.com/dabirrizvi/"><i
-              class="fa-brands fa-instagram fa-socials"></i></a>
+              <!-- Instagram -->
+              <a target="_blank" href="https://www.instagram.com/dabirrizvi/"><i
+                  class="fa-brands fa-instagram fa-socials"></i></a>
             </kinesis-element>
           </kinesis-container>
 
@@ -80,15 +80,11 @@ export default {
   data() {
     return {
       typedHeading: '',
-      introContent: '',
+      introContent: "Welcome to my portfolio! I'm a result-driven Software Developer with a diverse skill set that encompasses web-based applications, as well as artificial intelligence and machine learning. With a strong academic foundation and over a year of hands-on experience in agile teams, I'm dedicated to bringing creativity and efficiency to the world of software development. My journey has led me to become proficient in object-oriented programming, with a strong emphasis on AI and ML applications. I'm technologically savvy, and my unwavering drive to excel fuels my ambition to contribute effectively to any organisation's success. Explore my portfolio to discover the projects that reflect my dedication to the ever-evolving fields of software development and AI/ML.",
       targetText: 'Hi! My Name is Dabir Hasan Rizvi',
-      introContentText:
-        " Welcome to my portfolio! I'm a result-driven Software Developer with a diverse skill set that encompasses web-based applications, as well as artificial intelligence and machine learning. With a strong academic foundation and over a year of hands-on experience in agile teams, I'm dedicated to bringing creativity and efficiency to the world of software development. My journey has led me to become proficient in object-oriented programming, with a strong emphasis on AI and ML applications. I'm technologically savvy, and my unwavering drive to excel fuels my ambition to contribute effectively to any organisation's success. Explore my portfolio to discover the projects that reflect my dedication to the ever-evolving fields of software development and AI/ML.",
       typeSpeed: {
-        heading: 20, // Speed for typing heading
-        intro: 10,   // Speed for typing introduction content
-      },
-      typingComplete: false,
+        heading: 50, // Speed for typing heading
+      }
     };
   },
   mounted() {
@@ -104,7 +100,6 @@ export default {
         const typeInterval = setInterval(() => {
           this.typedHeading += this.targetText[index];
           index += 1;
-
           if (index === this.targetText.length) {
             clearInterval(typeInterval);
             this.blinkCursor();
@@ -113,41 +108,29 @@ export default {
         }, this.typeSpeed.heading);
       });
     },
-    async typeIntroContent() {
-      return new Promise((resolve) => {
-        let index = 0;
-        const typeInterval = setInterval(() => {
-          this.introContent += this.introContentText[index];
-          index += 1;
-
-          if (index === this.introContentText.length) {
-            clearInterval(typeInterval);
-            resolve();
-          }
-        }, this.typeSpeed.intro);
-      });
-    },
     blinkCursor() {
-      this.typingComplete = true;
       this.typeIntroContent();
     },
-  },
-};
+  }
+}
 </script>
 
 
 <style scoped>
 /* styling for cursor */
-.heading-intro h2::after, .intro-content p::after {
+.heading-intro h2::after {
   content: '|';
   display: inline-block;
   animation: blinkCursor 1s infinite;
 }
 
 @keyframes blinkCursor {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
@@ -172,7 +155,7 @@ export default {
 }
 
 .heading-intro>h2 {
-  
+
   font-size: 2rem;
   color: #FFE4C4;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -262,5 +245,4 @@ li:hover .fa-solid {
   ul {
     flex-direction: row;
   }
-}
-</style>
+}</style>
