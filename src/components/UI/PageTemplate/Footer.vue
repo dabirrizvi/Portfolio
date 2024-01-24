@@ -62,7 +62,7 @@
     <!-- Grid container -->
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      All rights reserved 2023 ©
+      All rights reserved 2024 ©
       <a href="/" class="text-white" style="text-decoration: none;">Dabir Hasan Rizvi</a>
     </div>
     <!-- Copyright -->
