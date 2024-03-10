@@ -45,7 +45,7 @@ export default {
            'Implemented responsive design experience and ensured optimal user experience for the company’s blog website working in collaboration with the content and SEO teams <a style="text-decoration:none; color:inherit;" target=_blank href="https://blog.networldsports.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>',
             'Identified workflow pain points across all departments and developed a Chrome Extension, working with APIs to address those needs.',
            'Employed Agile Methodology to migrate 40+ e-commerce stores from Magento 1 to Magento 2, improving website performance and customer experience.',
-           'Tools and languages used: JavaScript, Php, jQuery, Manifest JS, Vue.js, Magento 2, WordPress, HTML, CSS, Sass.'
+           'Tools and Technologies used: JavaScript, Gulp, PHP, jQuery, Laravel, PostgreSQL, Vue.Js, Magento 2, WordPress, Rest API, HTML, CSS, Sass, Bootstrap.'
            ],
         },
         {
