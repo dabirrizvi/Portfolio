@@ -1,5 +1,5 @@
 <template>
-    <div class="background container-fluid " data-aos="fade-up">
+    <div class="background container-fluid " >
       <div class="row">
             <h2 class="heading">Technical Skills</h2>
         </div>
@@ -51,11 +51,13 @@
           {
             images: [
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/JS.svg', color: '#ffd100' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/Python.svg', color: '#233D4D' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/JAVA.svg', color: '#fff' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/Python.svg', color: '#c7f9cc' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C.svg', color: '#f1faee' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C.svg', color: '#f5ebe0' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/TS.svg', color: '#0077b6' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/jQuery.svg', color: '#f1faee' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/Csharp.svg', color: '#b0c4b1' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C++.png', color: '#fff3b0' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/C++.png', color: '#d5bdaf' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/PHP.svg', color: '#415a77' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/Matlab.svg', color: '#b8c0ff' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Lang/R.svg', color: '#e0e1dd' },
@@ -63,27 +65,32 @@
           },
           {
             images: [
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Vue.svg', color: '#f7ede2' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Dotnet.svg', color: '#fff' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/HTML.svg', color: '#f3722c' },
+            { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/HTML.svg', color: '#f3722c' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/CSS.svg', color: '#4ea8de' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Vue.svg', color: '#22577a' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/React.svg', color: '#0d1b2a' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Bootstrap.svg', color: '#7678ed' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Sass.svg', color: '#e9ecef' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Talwind.svg', color: '#fff3b0' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Wordpress.svg', color: '#fff' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Talwind.svg', color: '#005f73' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Wordpress.svg', color: '#ee9b00' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Laravel.svg', color: '#fff' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Dotnet.svg', color: '#8338ec' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Soft/Magento.svg', color: '#f1dca7' },
             ],
           },
           {
             images: [
             { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/agile.jpg', color: '#fff' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/Git.svg', color: '#c9ada7' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/AI.png', color: '#e0fbfc' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/Git.svg', color: '#edf2f4' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/AI.png', color: '#4895ef' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/TF.svg', color: '#ffecd1' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/POSTGRESQL.svg', color: '#9db4c0' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/mongodb.svg', color: '#f8ffe5' },              
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/mysql.svg', color: '#ffbe0b' },              
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/firebase.svg', color: '#fdf0d5' },              
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/GCP.png', color: '#ffddd2' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/firebase.svg', color: '#fdf0d5' },  
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/docker.svg', color: '#fdfffc' },                          
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/GCP.png', color: '#f4f1de' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/Jira.svg', color: '#e9ecef' },
             ],
           },
         ],
@@ -100,11 +107,13 @@
   .card {
     padding: 30px;
     border: none;
-    background-color: #28282B;
+    background-color: #36454F,
+;
 
   }
   .background {
-    background-color: #28282B;
+    background-color: #36454F,
+;
     overflow: hidden;
   }
   h2{
