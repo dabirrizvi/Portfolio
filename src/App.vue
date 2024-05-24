@@ -22,22 +22,18 @@ import NavBar from "./components/UI/Navbar/NavbarSelector.vue"
 @media(max-width: 767px) {
   #app{
     background-image: none;
-    background-color: #2C3E50;
+    background-color: rgba(10, 12, 41);
   }
 }
 @media(min-width: 767px){
-#app{
-  background-image:
-        linear-gradient(to top,
-            rgba(51, 65, 85, 0.9),
-            rgba(51, 65, 85, 0.9)),
-        url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_mobile.jpg');
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  #app {
+                background-image: linear-gradient(to top, rgba(10, 12, 41, 0.9), rgba(10, 12, 41, 0.9)), 
+                                  url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/background.webp');
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
 }
 // Headers
 * {
