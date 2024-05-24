@@ -50,7 +50,7 @@ export default {
 </script>
 <style scoped>
 .background-certificate {
-    background-color: #28282B;
+    background-color: #004d4d;
     overflow: hidden;
 }
 .certificate-template{
