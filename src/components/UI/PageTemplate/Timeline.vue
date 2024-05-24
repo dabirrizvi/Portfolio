@@ -118,7 +118,7 @@ export default {
 
 .title {
   margin-left: 5rem;
-  color: #323d4f;
+  color: rgba(10, 12, 41);
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
   font-size: 2rem;
 }
@@ -135,7 +135,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #323d4f;
+  color: rgba(10, 12, 41);
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
 }
 
@@ -144,7 +144,7 @@ h1 {
 li {
   font-size: 1rem;
   line-height: 30px;
-  color: rgba(50, 61, 79);
+  color: rgba(10, 12, 41);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -157,7 +157,7 @@ li {
 }
 
 .accordion-item {
-  background-color: rgba(50, 61, 79, 0.15);
+  background-color: rgba(10, 12, 41, 0.15);
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -170,7 +170,7 @@ li {
 }
 
 .accordion-button {
-  background-color: rgba(50, 61, 79, 0.8);
+  background-color: rgba(10, 12, 41,0.8);
   color: #f8f9fa;
   position: relative;
 }
@@ -192,7 +192,7 @@ li {
 }
 
 .accordion-button:hover {
-  background-color: rgba(50, 61, 79, 1);
+  background-color: rgba(10, 12, 41,1);
 }
 
 .accordion-body {

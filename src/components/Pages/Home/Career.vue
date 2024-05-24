@@ -17,7 +17,7 @@ export default {
           date: 'September 2021 - December 2023',
           title: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://courses.aber.ac.uk/postgraduate/software-engineering-integrated-industrial-year/">MSc. Advanced Computer Science (with Integrated Year in Industry)</a>',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/aber.jpg',
-           description: '',
+          description: '',
           button_text: 'Relevant modules',
           list: ['Fundamentals of Intelligent Systems', 'Machine Learning for Intelligent Systems', 'Modelling, Managing and Securing Data', 'Agile Software Development Project', 'Statistics Concepts, Methods and Tools', 'Research Topics in Computing', 'MSc Project - Prediction of parking areas availability from parking dataset using AI/ML models'],
         },
@@ -27,7 +27,7 @@ export default {
           date: 'August 2016 - August 2020',
           title: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://www.cmrit.ac.in/courses/be-electronics-communication-engineering/">B.E in Electronics & Communication Engineering</a>',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/cmr.jpg',
-           description: '',
+          description: '',
           button_text: 'Relevant Modules',
           list: ['Programming in C & Data Structure', 'Microprocessors', 'Digital Signal Processing', 'Operating Systems', 'Programming in JAVA', 'ARM Microcontrollers & Embedded Systems', 'Python Application Programming', 'Network & Cyber Security', 'IOT & Wireless Sensor Networks', 'Project Work - Robot Movement Automation with Computer Vision'],
         }
@@ -41,12 +41,15 @@ export default {
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/nws.jpg',
           description: 'Full-Time (Industrial Year)',
           button_text: 'View Details',
-           list: ['Built responsive and reusable front-end components using a micro-service architecture with Vue.js.', 
-           'Implemented responsive design experience and ensured optimal user experience for the company’s blog website working in collaboration with the content and SEO teams <a style="text-decoration:none; color:inherit;" target=_blank href="https://blog.networldsports.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>',
-            'Identified workflow pain points across all departments and developed a Chrome Extension, working with APIs to address those needs.',
-           'Employed Agile Methodology to migrate 40+ e-commerce stores from Magento 1 to Magento 2, improving website performance and customer experience.',
-           'Tools and Technologies used: JavaScript, Gulp, PHP, jQuery, Laravel, PostgreSQL, Vue.Js, Magento 2, WordPress, Rest API, HTML, CSS, Sass, Bootstrap.'
-           ],
+          list: [
+            'Built responsible and reusable Vue.JS front-end components, optimising performance within a microservice architecture.',
+            'Enhanced user experience for the company’s blog website, leading to a 40% increase in user engagement by collaborating with content and SEO teams to implement responsive design <a style="text-decoration:none; color:inherit;" target=_blank href="https://blog.networldsports.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>.',
+            'Streamlined workflows across departments by developing a Chrome Extension, integrating APIs and boosting productivity by 60%.',
+            'Employed agile methodology to migrate 40+ e-commerce stores from Magento 1 to Magento 2, resulting in a 30% reduction in page load times, an improved lighthouse score by 15%, and an enhanced customer experience <a style="text-decoration:none; color:inherit;" target=_blank href="https://www.networldsports.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>.',
+            'Conducted code reviews, ensured documentation, and maintained high code quality.',
+            'Collaborated with cross-functional teams to deliver new features and improve existing functionalities.',
+            'Tools and Technologies used: JavaScript, Gulp, PHP, jQuery, Laravel, PostgreSQL, Vue.JS, Magento 2, WordPress, Rest API, HTML, CSS, Sass, Bootstrap.'
+          ],
         },
         {
           id: '4',
@@ -56,11 +59,17 @@ export default {
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/rnr.jpg',
           description: 'Internship',
           button_text: 'View Details',
-          list: ['Analysed requirements and adhered to industrial technical standards working as a Java developer to develop a Software Application for Pick-to-Light system.',
-            'Participated in the complete Software Development Life Cycle, including performance analysis, design, development and testing, ensuring ideal functionality and user experience.',
-            'Utilised Scrum and Test-Driven Development (TDD) to optimise the development process and ensure high-quality software delivery.'],
+          list: [
+            'Developed a scalable Pick-to-light system GUI, adhering to technical standards and enhancing operational efficiency.',
+            'Engaged in the complete software development life cycle, including performance analysis, design, development, and testing, to deliver optimal user experience and ideal functionality.',
+            'Leveraged Scrum and Test-Driven Development (TDD) to streamline the development process and ensure high quality software delivery, reducing bug occurrence by 30%.',
+            'Participated in client meetings to gather requirements and present progress, enhancing client satisfaction and increasing efficiency by 20%.',
+            'Contributed to documentation and user manuals, facilitating easier maintenance and upgrades.',
+            'Utilised Java and related technologies to ensure high performance and scalability of applications.'
+          ],
         }
       ]
+
     };
   }
 };
