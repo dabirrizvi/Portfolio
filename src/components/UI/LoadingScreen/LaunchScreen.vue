@@ -62,7 +62,7 @@ export default {
 }
 }
 #loader {
-  background-color: #2C3E50;
+  background-color: rgba(10, 12, 41);
   /* Bright background color */
   left: -100%;
   bottom: 0;

@@ -106,7 +106,7 @@ export default {
 
 <style scoped>
 .background {
-  background-color: rgba(50, 61, 79);
+  background-color: #050b36;
   padding: 20px;
 }
 
