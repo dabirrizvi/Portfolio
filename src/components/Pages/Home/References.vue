@@ -131,7 +131,7 @@ export default {
   
 <style lang="scss" scoped>
 .references {
-    background-color: #ffe4c4;
+    background-color: #fefee3;
     overflow: hidden;
     padding: 50px 0px;
 }
