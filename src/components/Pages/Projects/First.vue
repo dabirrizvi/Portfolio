@@ -1,27 +1,24 @@
 <template>
   <div class="background">
-    <div class="row content-container intro-content-container" >
-      <h2 data-aos="fade-in">Embarking on a Technological Odyssey</h2>
-        <p class="intro-content" >Navigating the dynamic intersection of technological ingenuity and hands-on
-          problem-solving, my journey unfolds in the vibrant landscape where theory meets practice. Rooted in a robust
-          academic foundation in computer science, I've ventured beyond textbooks, delving into the practical arena of
-          software development with remarkable agility.</p>
-        <p class="intro-content" >My professional odyssey thrives in the collaborative heartbeat of agile teams.
-          Adaptability, problem-solving, and the art of delivering tangible solutions define my everyday ethos.
-          Each project becomes a canvas for applying academic insights to real-world challenges, sculpting them into
-          impactful solutions.</p>
-        <p class="intro-content" >At the core of my endeavors lies an unyielding passion for innovation in artificial
-          intelligence and machine learning. The captivating allure of these technologies inspires me to navigate
-          uncharted territories, be it unraveling the mysteries of computer vision, mastering the nuances of natural
-          language processing, or sculpting predictive models that resonate with real-world needs.</p>
-        <p class="intro-content" >My enthusiasm for technology transcends the theoretical, finding expression in each
-          project I undertake. Whether crafting scalable web applications or sculpting intricate machine learning models,
-          I approach every challenge with zest and a commitment to transformative outcomes.</p>
-        <p class="intro-content" >Embark on a journey through my portfolio to witness the practical dimensions of my
-          experience. It's a testament to the diverse projects that have defined my path and showcased the real-world
-          impact of my skills. Whether you're seeking collaboration, have an exciting project in mind, or simply wish to
-          connect with a practical-minded technologist, I'm here to explore the boundless possibilities with you.</p>
-      </div>
+    <div class="row content-container intro-content-container">
+  <h2 data-aos="fade-in">Embarking on a Technological Odyssey</h2>
+  <p class="intro-content">
+    Welcome to my personal projects portfolio, where technological ingenuity meets hands-on problem-solving. With a solid academic foundation in computer science and practical experience in software development, I've navigated the vibrant landscape where theory seamlessly transitions into practice.
+  </p>
+  <p class="intro-content">
+    My journey is defined by collaboration, adaptability, and delivering impactful solutions within agile teams. Each project serves as a testament to my ability to apply academic insights to real-world challenges, transforming them into tangible outcomes.
+  </p>
+  <p class="intro-content">
+    At the heart of my endeavors is a profound passion for innovation in artificial intelligence and machine learning. Whether it's exploring the intricacies of computer vision, mastering natural language processing, or developing predictive models, I am dedicated to harnessing the power of AI/ML for practical applications.
+  </p>
+  <p class="intro-content">
+    My enthusiasm for technology extends beyond theoretical knowledge, finding expression in each project I undertake. From creating scalable web applications to developing sophisticated machine learning models, I approach every challenge with zeal and a commitment to excellence.
+  </p>
+  <p class="intro-content">
+    I invite you to explore my portfolio and witness the practical dimensions of my experience. This collection of diverse projects highlights the real-world impact of my skills and showcases my dedication to pushing the boundaries of technology. Whether you're interested in collaboration, have an exciting project idea, or simply want to connect with a passionate technologist, I'm here to explore the limitless possibilities with you.
+  </p>
+</div>
+
     </div>
 </template>
   
