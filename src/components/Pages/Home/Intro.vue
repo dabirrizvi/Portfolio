@@ -80,7 +80,7 @@ export default {
   data() {
     return {
       typedHeading: '',
-      introContent: "Welcome to my portfolio! I'm a result-driven Software Developer with a diverse skill set that encompasses web-based applications, as well as artificial intelligence and machine learning. With a strong academic foundation and over a year of hands-on experience in agile teams, I'm dedicated to bringing creativity and efficiency to the world of software development. My journey has led me to become proficient in object-oriented programming, with a strong emphasis on AI and ML applications. I'm technologically savvy, and my unwavering drive to excel fuels my ambition to contribute effectively to any organisation's success. Explore my portfolio to discover the projects that reflect my dedication to the ever-evolving fields of software development and AI/ML.",
+      introContent: "Welcome to my portfolio! I'm a result-driven Software Developer with a diverse skill set that encompasses web-based applications, artificial intelligence, and machine learning. With a strong academic background, including an MSc in Advanced Computer Science and a Bachelor of Engineering in Electronics and Communication, and over a year of hands-on experience in agile teams, I am dedicated to bringing creativity and efficiency to the world of software development. My journey has led me to become proficient in object-oriented programming, with a strong emphasis on AI and ML applications. I'm technologically savvy, and my unwavering drive to excel fuels my ambition to contribute effectively to any organisation's success. Explore my portfolio to discover the projects that reflect my dedication to the ever-evolving fields of software development and AI/ML.",
       targetText: 'Hi! My Name is Dabir Hasan Rizvi',
       typeSpeed: {
         heading: 50, // Speed for typing heading
@@ -175,14 +175,13 @@ export default {
   margin: 50px 0px;
   position: relative;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #f8f9fa;
   border: 1px solid #333;
   border-radius: 25px;
-  color: #f8f9fa;
+  color: rgba(10, 12, 41);
   padding: 10px 20px;
   font-size: 1.5rem;
   cursor: pointer;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
 }
@@ -194,7 +193,7 @@ export default {
   right: 100%;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 228, 196, 0.4);
+  background-color: #FFE4C4;
   transition: right 0.5s ease-in-out;
   z-index: -1;
 }
@@ -204,9 +203,8 @@ export default {
 }
 
 .btn:hover {
-  color: rgba(255, 228, 196);
-  ;
-
+  color: rgba(10, 12, 41);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .fa-file-arrow-down {
