@@ -126,11 +126,11 @@ export default {
 }
 
 .research-item {
-  border: 1px solid rgba(255, 228, 196);;
+  border: 1px solid rgba(255, 228, 196);
   margin: 50px 0;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgba(255, 228, 196);;
+  background-color: #fefee3;
 }
 
 .research-link {
