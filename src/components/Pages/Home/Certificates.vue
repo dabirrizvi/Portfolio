@@ -14,6 +14,7 @@
                     modifier: 1,
                     slideShadows: true,
                 }" :pagination="true" :navigation="true" :modules="modules" class="mySwiper" :observer="true">
+                <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/Web.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/vue.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/ML.jpg" /></swiper-slide>
                 <swiper-slide><img src="https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Certificates/Deeplearning.jpg" /></swiper-slide>
