@@ -35,6 +35,20 @@ export default {
       workExperienceEvents: [
         {
           id: '3',
+          name: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://reachstudios.co.uk/">Reach Studios Ltd.</a>',
+          date: 'July 2024 - Present',
+          title: 'Junior Magento Developer',
+          image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/reach.jpg',
+          description: 'Full-time',
+          button_text: 'View Details',
+          list: [
+            'Engineered and deployed bespoke CMS blocks for Corney & Barrow, enhancing site performance, usability, back-end management and addressing critical bugs to ensure smooth functionality. <a style="text-decoration:none; color:inherit;" target=_blank href="https://www.corneyandbarrow.com/"><i class="fa-solid fa-right-from-bracket"></i></a>',
+            'Currently designing a custom one-step checkout layout, improving user experience and increasing conversion efficiency.',
+            'Taking on critical responsibilities in the setup and configuration of the Mirage website, ensuring smooth project initiation and adherence to development standards. <a style="text-decoration:none; color:inherit;" target=_blank href="https://mirage.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>'
+          ],
+        },
+        {
+          id: '4',
           name: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://www.networldsports.co.uk/about">Net World Sports Ltd.</a>',
           date: 'July 2022 - June 2023',
           title: 'Junior Web Developer',
@@ -52,7 +66,7 @@ export default {
           ],
         },
         {
-          id: '4',
+          id: '5',
           name: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://racksandrollers.com/">Racks & Rollers | Storage Technologies & Automation</a>',
           date: 'January 2020 - July 2020',
           title: 'Java Programmer - Internship',
