@@ -23,6 +23,7 @@
       <img class="img-logo" :src="images[1].src" @click="redirectToPage(images[1].link)" alt="CMR Image" />
       <img class="img-logo" :src="images[2].src" @click="redirectToPage(images[2].link)" alt="RNR Image" />
       <img class="img-logo" :src="images[3].src" @click="redirectToPage(images[3].link)" alt="NWS Image" />
+      <img class="img-logo" :src="images[4].src" @click="redirectToPage(images[4].link)" alt="Reach Image" />
     </p>
             </div>
     </div>
@@ -36,6 +37,7 @@ export default {
         { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/cmr.png', link: 'https://www.cmrit.ac.in/' },
         { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/rnr.png', link: 'https://racksandrollers.com/' },
         { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/nws.png', link: 'https://www.networldsports.co.uk/about' },
+        { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/no_bg/reach.png', link: 'https://reachstudios.co.uk/about-us/' }
       ],
     };
   },
