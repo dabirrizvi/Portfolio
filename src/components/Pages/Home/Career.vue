@@ -45,8 +45,8 @@ export default {
             'Collaborated with stakeholders to gather requirements, present concepts, and deploy custom CMS blocks for Corney & Barrow, improving site performance, usability, and back-end management. <a style="text-decoration:none; color:inherit;" target=_blank href="https://www.corneyandbarrow.com/"><i class="fa-solid fa-right-from-bracket"></i></a>',
             'Building a scalable B2B Magento platform to replace a legacy SAP system, incorporating customer group–based pricing, custom catalogs, and approval workflows.',
             'Integrated PunchOut functionality to support seamless procurement for B2B clients.',
-            'Developed a vape store using the Hyvä frontend and integrated Amasty one-step checkout, adhering to Magento best practices for performance and maintainability. <a style="text-decoration:none; color:inherit;" target=_blank href="https://mirage.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>',
-            'Created custom Magento widgets to extend both frontend and backend capabilities.',
+            'Developed a vape store using the Hyvä frontend and integrated Amasty one-step checkout, adhering to Magento best practices for performance and maintainability. <a style="text-decoration:none; color:inherit;" target=_blank href="https://staging.mirage.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>',
+            'Created custom Magento components to extend both frontend and backend capabilities.',
             'Implemented GraphQL endpoints to enable dynamic and efficient data retrieval.',
             'Applied critical Magento security patches to ensure platform security and compliance.'
           ],
