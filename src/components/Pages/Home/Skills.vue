@@ -87,7 +87,7 @@
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/firebase.svg', color: '#fdf0d5' },  
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/docker.svg', color: '#fdfffc' },                          
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/GCP.png', color: '#f4f1de' },
-              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/GraphQL.png', color: '#669bbc' },
+              { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/GraphQL.svg', color: '#669bbc' },
               { src: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Skills/Misc/TF.svg', color: '#ffecd1' },
             ],
           },
