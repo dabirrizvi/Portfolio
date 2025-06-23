@@ -5,17 +5,13 @@
             <h3>About Me</h3>
 <section class="about-content">
     <p data-aos="fade-left" data-aos-easing="ease-in-sine">
-        I thrive at the intersection of creativity and data-driven problem-solving, where technology becomes a powerful tool for innovation. My academic journey, including an MSc in Advanced Computer Science and a Bachelor of Engineering in Electronics and Communication, has provided me with a robust foundation in computer science, enabling me to excel in various domains of software development. My practical experience in agile teams has honed my ability to collaborate, adapt, and deliver real-world solutions.
-    </p>
+        I thrive at the intersection of creativity, technology, and data-driven problem-solving. With an MSc in Advanced Computer Science and a BE in Electronics and Communication, I bring a strong academic foundation and a versatile technical skill set to the table. My hands-on experience in agile, cross-functional teams has shaped me into a collaborative and adaptable software developer capable of delivering real-world solutions.    </p>
     <p data-aos="fade-right" data-aos-easing="ease-in-sine">
-        One of my true passions is the realm of artificial intelligence and machine learning. I'm captivated by the potential of AI and ML to transform industries and improve our lives. My foray into this field has been marked by a commitment to staying at the forefront of these technologies and applying them to real-world challenges. Whether it's computer vision, natural language processing, or predictive modelling, I'm always eager to explore the boundaries of AI/ML and harness their power for practical applications.
-    </p>
+        I have a strong interest in artificial intelligence and machine learning and enjoy exploring their practical applications. I’ve worked with concepts like computer vision, natural language processing, and predictive modeling through personal projects and coursework. I continue to stay updated on emerging technologies and look for opportunities to apply them when relevant.</p>
     <p data-aos="fade-left" data-aos-easing="ease-in-sine">
-        As a technologically-savvy individual, I embrace each project as an opportunity to learn, innovate, and contribute to the success of organisations and teams. Collaboration, problem-solving, and creative thinking are the driving forces behind my work. Whether it's developing a web application, creating a machine learning model, or optimizing a system for better performance, I approach each task with enthusiasm and a commitment to excellence.
-    </p>
+        Every project I take on is an opportunity to learn, innovate, and contribute. Whether I’m building scalable web applications, designing intelligent systems, or fine-tuning performance, I approach challenges with curiosity, creativity, and a commitment to excellence.    </p>
     <p data-aos="fade-right" data-aos-easing="ease-in-sine">
-        I invite you to explore my portfolio to gain insight into the projects and experiences that have shaped my journey. Whether you're interested in collaboration, have an exciting project idea, or simply want to connect with a passionate software developer and AI/ML enthusiast, don't hesitate to reach out. Let's create something amazing together.
-    </p>
+        Feel free to explore my portfolio to learn more about my work. If you're looking for a passionate developer, eager collaborator, or someone to brainstorm your next big idea with—let’s connect.    </p>
 </section>
 
             <p class="img-content">
