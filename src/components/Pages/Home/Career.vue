@@ -37,16 +37,18 @@ export default {
           id: '3',
           name: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://reachstudios.co.uk/">Reach Studios Ltd.</a>',
           date: 'July 2024 - Present',
-          title: 'Junior Magento Developer',
+          title: 'Mid-Level Magento Developer',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/reach.jpg',
-          description: 'Full-time',
+          description: 'Full-time • Team Member of the Month (Aug 2025)',
           button_text: 'View Details',
           list: [
-            'Collaborated closely with stakeholders to gather detailed requirements, present technical concepts, and deploy custom CMS blocks for clients like Corney & Barrow, significantly enhancing site performance, usability, and backend management. <a style="text-decoration:none; color:inherit;" target=_blank href="https://www.corneyandbarrow.com/"><i class="fa-solid fa-right-from-bracket"></i></a>',
-            'Played a key role in building a scalable B2B Magento platform to replace a legacy SAP system, implementing customer group–based pricing, tailored catalog management, and API-driven approval workflows to streamline business processes.',
-            'Engineered backend services within a microservice architecture, developing custom Magento modules and optimising checkout workflows while leveraging Kafka for event-driven asynchronous communication and RESTful APIs to enable scalable and loosely coupled components.',
-            'Enhanced search functionality using Elasticsearch, developed reusable Magento widgets, implemented GraphQL endpoints for efficient data querying, and applied critical security patches to maintain a secure, reliable, and compliant platform.',
-            'Developed a vape store frontend using Hyvä and integrated Amasty one-step checkout, ensuring adherence to Magento best practices for optimal performance and maintainability. <a style="text-decoration:none; color:inherit;" target=_blank href="https://mirage.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>'
+            'Collaborated closely with stakeholders to gather requirements, present technical concepts, and deploy custom CMS blocks, significantly improving site performance, usability, and backend content management.',
+            'Contributing to the development of a scalable B2B Magento platform replacing a legacy SAP system, implementing customer group–based pricing, tailored catalog management, custom workflows, and PunchOut integration to streamline enterprise procurement.',
+            'Developed storefronts using the Hyvä frontend and integrated Amasty One-Step Checkout while adhering to Magento best practices to ensure high performance, maintainability, and clean architecture.',
+            'Enhanced platform capabilities by improving search performance with Elasticsearch, building reusable Magento widgets, implementing GraphQL endpoints, and applying critical security patches to maintain a secure and reliable platform.',
+            'Managed Magento infrastructure on Hypernode, setting up and maintaining deployment pipelines and overseeing environment configurations to support reliable CI/CD workflows.',
+            'Successfully delivered 6+ Magento projects from development to production, taking technical ownership of several implementations and leading development efforts on multiple client projects.',
+            'Recognised as Team Member of the Month in August 2025 for strong technical contributions and leadership in delivering high-quality Magento solutions.'
           ],
         },
         {
