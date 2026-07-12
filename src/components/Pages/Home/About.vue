@@ -1,7 +1,6 @@
 <template>
     <div class=" row content-about">
-        <div class="col-xxl-5 col-lg-5 col-md-0 extra-spacing" style="margin: 0;"></div>
-        <div class="col-xxl-7 col-lg-7 col-md-12 content-intro">
+        <div class="col-12 content-intro">
             <h3>About Me</h3>
             <section class="about-content">
                 <p data-aos="fade-left" data-aos-easing="ease-in-sine">
@@ -67,10 +66,17 @@ export default {
     min-height: 100vh;
 }
 
-.content-intro{
+.content-intro {
     margin: auto;
-    padding: 100px 20px;
+    padding: 100px 100px;
 }
+
+@media (max-width: 1200px) {
+    .content-intro {
+        padding: 100px 20px;
+    }
+}
+    
 p,
 h3 {
     color: #f8f9fa;
