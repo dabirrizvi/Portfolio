@@ -86,8 +86,8 @@
                         v-if="!skill.imageFailed"
                         :src="skill.src"
                         alt=""
-                        width="170"
-                        height="170"
+                        width="180"
+                        height="180"
                         loading="lazy"
                         decoding="async"
                         class="skill-logo"
@@ -105,16 +105,6 @@
                         {{ skill.shortName || skill.name }}
                       </span>
                     </div>
-
-                    <div class="skill-label">
-                      <span class="skill-name">
-                        {{ skill.name }}
-                      </span>
-
-                      <span class="skill-position">
-                        Skill {{ skillIndex + 1 }} of {{ column.skills.length }}
-                      </span>
-                    </div>
                   </article>
                 </swiper-slide>
               </swiper>
@@ -128,17 +118,9 @@
           aria-live="polite"
           aria-atomic="true"
         >
-          <span class="current-skill-label">
-            Currently viewing
-          </span>
-
           <strong class="current-skill-name">
             {{ getCurrentSkill(column).name }}
           </strong>
-
-          <span class="current-skill-count">
-            {{ getActiveIndex(column.id) + 1 }} of {{ column.skills.length }}
-          </span>
         </div>
       </div>
     </div>
@@ -183,7 +165,7 @@ export default {
       activeSlides: {
         'programming-languages': 0,
         'frontend-frameworks': 0,
-        'backend-databases-devops': 0,
+        'backend-devops': 0,
       },
 
       columns: [
@@ -346,8 +328,8 @@ export default {
         },
 
         {
-          id: 'backend-databases-devops',
-          heading: 'Backend, Databases & DevOps',
+          id: 'backend-devops',
+          heading: 'Backend & DevOps',
           skills: [
             {
               id: 'node',
@@ -449,15 +431,6 @@ export default {
               imageFailed: false,
             },
             {
-              id: 'hypernode',
-              name: 'Hypernode',
-              shortName: 'HYPERNODE',
-              src: `${assetsBaseUrl}/Misc/Hypernode.svg`,
-              color: '#cfe8dd',
-              logoScale: 1.12,
-              imageFailed: false,
-            },
-            {
               id: 'gcp',
               name: 'Google Cloud Platform',
               shortName: 'GCP',
@@ -467,21 +440,12 @@ export default {
               imageFailed: false,
             },
             {
-              id: 'jira',
-              name: 'Jira',
+              id: 'jira-scrum',
+              name: 'Jira & Scrum',
               shortName: 'JIRA',
               src: `${assetsBaseUrl}/Misc/Jira.svg`,
               color: '#d4e0f5',
               logoScale: 1.15,
-              imageFailed: false,
-            },
-            {
-              id: 'agile',
-              name: 'Agile / Scrum',
-              shortName: 'AGILE',
-              src: `${assetsBaseUrl}/Misc/Agile.svg`,
-              color: '#e2dcf2',
-              logoScale: 1.14,
               imageFailed: false,
             },
           ],
@@ -560,7 +524,7 @@ h2,
 
 .swiper {
   width: 250px;
-  height: 360px;
+  height: 310px;
   padding: 0 4px 34px;
 }
 
@@ -578,10 +542,9 @@ h2,
   position: relative;
   display: flex;
   width: 250px;
-  height: 326px;
-  flex-direction: column;
+  height: 276px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
   outline: none;
 }
@@ -594,20 +557,19 @@ h2,
 .logo-container {
   display: flex;
   width: 100%;
-  min-height: 220px;
-  flex: 1;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  padding: 28px 24px 12px;
+  padding: 30px;
   overflow: hidden;
 }
 
 .skill-logo {
   display: block;
-  width: 82%;
-  max-width: 180px;
-  height: 82%;
-  max-height: 180px;
+  width: 84%;
+  max-width: 190px;
+  height: 84%;
+  max-height: 190px;
   object-fit: contain;
   transform-origin: center;
 }
@@ -623,48 +585,14 @@ h2,
   text-align: center;
 }
 
-.skill-label {
+.current-skill {
   display: flex;
-  width: calc(100% - 28px);
-  min-height: 82px;
-  margin: 0 14px 16px;
-  padding: 11px 14px;
-  flex-direction: column;
+  width: min(100%, 290px);
+  min-height: 64px;
+  margin: 22px auto 0;
+  padding: 12px 20px;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(255, 255, 255, 0.42);
-  border-radius: 20px;
-  background-color: #111820;
-  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.22);
-  color: #ffffff;
-  text-align: center;
-}
-
-.skill-name {
-  display: block;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 800;
-  line-height: 1.2;
-}
-
-.skill-position {
-  display: block;
-  margin-top: 4px;
-  color: #dbe5ed;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.current-skill {
-  display: grid;
-  width: min(100%, 290px);
-  min-height: 96px;
-  margin: 24px auto 0;
-  padding: 14px 20px;
   border: 1px solid rgba(255, 228, 196, 0.5);
   border-radius: 14px;
   background-color: #202d35;
@@ -672,27 +600,12 @@ h2,
   text-align: center;
 }
 
-.current-skill-label {
-  color: #d9e0e5;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
 .current-skill-name {
-  margin: 3px 0;
   color: #ffe4c4;
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
+  font-weight: 700;
   line-height: 1.3;
-}
-
-.current-skill-count {
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
 }
 
 :deep(.swiper-button-prev),
@@ -757,32 +670,27 @@ h2,
 
   .swiper {
     width: 225px;
-    height: 340px;
+    height: 290px;
   }
 
   .image-wrapper {
     width: 225px;
-    height: 306px;
+    height: 256px;
   }
 
   .logo-container {
-    min-height: 200px;
-    padding: 24px 20px 10px;
+    padding: 26px;
   }
 
   .skill-logo {
-    width: 80%;
-    max-width: 160px;
-    height: 80%;
-    max-height: 160px;
+    width: 82%;
+    max-width: 170px;
+    height: 82%;
+    max-height: 170px;
   }
 
-  .skill-name {
-    font-size: 1.15rem;
-  }
-
-  .skill-label {
-    min-height: 78px;
+  .current-skill-name {
+    font-size: 1.2rem;
   }
 
   .card {
