@@ -37,18 +37,17 @@ export default {
           id: '3',
           name: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://reachstudios.co.uk/">Reach Studios Ltd.</a>',
           date: 'July 2024 - Present',
-          title: 'Mid-Level Magento Developer',
+          title: 'Mid-Level Full-Stack E-commerce Developer',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/reach.jpg',
-          description: 'Full-time • Team Member of the Month (Aug 2025)',
+          description: 'Full-time',
           button_text: 'View Details',
           list: [
-            'Collaborated closely with stakeholders to gather requirements, present technical concepts, and deploy custom CMS blocks, significantly improving site performance, usability, and backend content management.',
-            'Contributing to the development of a scalable B2B Magento platform replacing a legacy SAP system, implementing customer group–based pricing, tailored catalog management, custom workflows, and PunchOut integration to streamline enterprise procurement.',
-            'Developed storefronts using the Hyvä frontend and integrated Amasty One-Step Checkout while adhering to Magento best practices to ensure high performance, maintainability, and clean architecture.',
-            'Enhanced platform capabilities by improving search performance with Elasticsearch, building reusable Magento widgets, implementing GraphQL endpoints, and applying critical security patches to maintain a secure and reliable platform.',
-            'Managed Magento infrastructure on Hypernode, setting up and maintaining deployment pipelines and overseeing environment configurations to support reliable CI/CD workflows.',
-            'Successfully delivered 6+ Magento projects from development to production, taking technical ownership of several implementations and leading development efforts on multiple client projects.',
-            'Recognised as Team Member of the Month in August 2025 for strong technical contributions and leadership in delivering high-quality Magento solutions.'
+            'Promoted to Mid-Level Developer, collaborating with stakeholders to translate business requirements into technical solutions, mentoring junior developers, and recognised as Team Member of the Month (August 2025) for project delivery and cross-team collaboration.',
+            'Built and scaled a Magento 2 B2B platform replacing a legacy SAP system, implementing customer group pricing, tailored catalog management, custom workflows, and PunchOut integration to streamline enterprise procurement.',
+            'Developed custom Magento modules, backend services, and checkout functionality, integrating third-party systems through RESTful APIs while following Magento best practices and clean architecture principles.',
+            'Built high-performance storefronts using the Hyvä frontend, reusable CMS components, and custom widgets, while enhancing search with Elasticsearch and applying critical security patches.',
+            'Managed Magento infrastructure on Hypernode, maintaining deployment pipelines, environment configurations, and CI/CD workflows to support reliable releases.',
+            'Successfully delivered 10+ Magento projects from development through to production, taking technical ownership of several client implementations and leading development across multiple client projects.'
           ],
         },
         {
@@ -57,36 +56,35 @@ export default {
           date: 'July 2022 - June 2023',
           title: 'Junior Web Developer',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/nws.jpg',
-          description: 'Full-Time (Industrial Year)',
+          description: 'Full-Time (Industrial Placement)',
           button_text: 'View Details',
           list: [
-            'Designed and implemented responsive, reusable Vue.js components within a microservice architecture, integrating seamlessly with Node.js and Express.js backend services to deliver high-performance, scalable web applications.',
-            'Revamped the company’s blog website in collaboration with content and SEO teams, resulting in a 40% increase in user engagement through mobile-first design and content optimisation. <a style="text-decoration:none; color:inherit;" target=_blank href="https://blog.networldsports.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>',
-            'Developed a Chrome Extension integrating multiple APIs, streamlining workflows and boosting departmental productivity by 60%.',
-            'Led the agile migration of 40+ e-commerce stores from Magento 1 to Magento 2, achieving a 30% reduction in page load times, a 15% improvement in Lighthouse scores, and significantly enhanced customer experience. <a style="text-decoration:none; color:inherit;" target=_blank href="https://www.networldsports.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>',
-            'Conducted thorough code reviews, maintained comprehensive documentation, adhered to development best practices, and utilised CI/CD pipelines to automate testing and deployment—ensuring faster, more reliable releases.',
-            'Collaborated effectively with cross-functional teams to deliver new features and improve existing functionalities.',
+            'Designed and implemented responsive, reusable Vue.js and React.js components within a microservice architecture, integrating with Node.js and Express.js backend services to deliver high-performance, scalable web applications.',
+            'Led the migration of 40+ e-commerce stores from Magento 1 to Magento 2, reducing page load times by 30% and improving Lighthouse scores by approximately 15 points. <a style="text-decoration:none; color:inherit;" target=_blank href="https://www.networldsports.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>',
+            'Revamped the company blog in collaboration with content and SEO teams, delivering a mobile-first experience that increased user engagement by 40%. <a style="text-decoration:none; color:inherit;" target=_blank href="https://blog.networldsports.co.uk/"><i class="fa-solid fa-right-from-bracket"></i></a>',
+            'Developed an API-driven Chrome Extension that streamlined internal workflows and improved departmental productivity by 60%.',
+            'Contributed to agile development by performing code reviews, maintaining documentation, and supporting CI/CD pipelines for faster and more reliable deployments.',
+            'Worked closely with cross-functional teams to deliver new features and continuously improve existing products.'
           ],
         },
         {
           id: '5',
           name: '<a style="text-decoration:none; color:inherit;" target=_blank href="https://racksandrollers.com/">Racks & Rollers | Storage Technologies & Automation</a>',
           date: 'January 2020 - July 2020',
-          title: 'Java Programmer - Internship',
+          title: 'Java Programmer Intern',
           image: 'https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Timeline/rnr.jpg',
           description: 'Internship',
           button_text: 'View Details',
           list: [
-            'Designed and developed a scalable Pick-to-Light system GUI, significantly improving operational efficiency and enhancing user experience.',
-            'Engaged in the full software development lifecycle—from performance analysis and system design to development, testing, and deployment—ensuring optimal functionality and reliability.',
-            'Adopted Scrum methodology and Test-Driven Development (TDD) practices to streamline development and improve software quality, reducing bug incidence by 30%.',
-            'Collaborated directly with clients to gather requirements and present solutions, contributing to a 20% improvement in implementation efficiency.',
-            'Created detailed technical documentation and user manuals to support long-term maintainability.',
-            'Utilised Java and supporting technologies to build robust and high-performance applications tailored to industrial automation needs.'
+            'Designed and developed a Java-based Pick-to-Light system GUI, improving warehouse efficiency and enhancing the operator experience.',
+            'Worked across the full software development lifecycle, from requirements gathering and system design through development, testing, and deployment.',
+            'Applied Scrum methodology and Test-Driven Development (TDD) practices, contributing to a 30% reduction in software defects.',
+            'Collaborated with clients and internal teams to gather requirements and present technical solutions for warehouse automation systems.',
+            'Produced technical documentation and user guides to support long-term maintainability and knowledge transfer.',
+            'Developed robust Java applications for industrial automation using object-oriented programming principles and software engineering best practices.'
           ],
         }
       ]
-
     };
   }
 };
