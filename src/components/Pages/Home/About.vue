@@ -3,25 +3,32 @@
         <div class="col-xxl-5 col-lg-5 col-md-0 extra-spacing" style="margin: 0;"></div>
         <div class="col-xxl-7 col-lg-7 col-md-12 content-intro">
             <h3>About Me</h3>
-<section class="about-content">
-    <p data-aos="fade-left" data-aos-easing="ease-in-sine">
-        I thrive at the intersection of creativity, technology, and data-driven problem-solving. With an MSc in Advanced Computer Science and a BE in Electronics and Communication, I bring a strong academic foundation and a versatile technical skill set to the table. My hands-on experience in agile, cross-functional teams has shaped me into a collaborative and adaptable software developer capable of delivering real-world solutions.    </p>
-    <p data-aos="fade-right" data-aos-easing="ease-in-sine">
-        I have a strong interest in artificial intelligence and machine learning and enjoy exploring their practical applications. I’ve worked with concepts like computer vision, natural language processing, and predictive modeling through personal projects and coursework. I continue to stay updated on emerging technologies and look for opportunities to apply them when relevant.</p>
-    <p data-aos="fade-left" data-aos-easing="ease-in-sine">
-        Every project I take on is an opportunity to learn, innovate, and contribute. Whether I’m building scalable web applications, designing intelligent systems, or fine-tuning performance, I approach challenges with curiosity, creativity, and a commitment to excellence.    </p>
-    <p data-aos="fade-right" data-aos-easing="ease-in-sine">
-        Feel free to explore my portfolio to learn more about my work. If you're looking for a passionate developer, eager collaborator, or someone to brainstorm your next big idea with—let’s connect.    </p>
-</section>
+            <section class="about-content">
+                <p data-aos="fade-left" data-aos-easing="ease-in-sine">
+                    I've always been curious about how things work and enjoy finding better ways to build them. That curiosity led me into software engineering and continues to motivate me every day. With an MSc in Advanced Computer Science and a BE in Electronics and Communication, I enjoy solving challenging problems, learning new technologies, and turning ideas into reliable, user-focused software.
+                </p>
+                
+                <p data-aos="fade-right" data-aos-easing="ease-in-sine">
+                    Outside of my day-to-day work, I have a strong interest in artificial intelligence, machine learning, and computer vision. I enjoy experimenting with new ideas through personal projects and research, and I'm always looking to expand my knowledge and stay up to date with emerging technologies.
+                </p>
+                
+                <p data-aos="fade-left" data-aos-easing="ease-in-sine">
+                    I'm someone who enjoys collaborating with others, sharing knowledge, and continuously improving both technically and personally. I believe great software isn't just about writing clean code, but also about understanding people, communicating effectively, and creating solutions that make a real difference.
+                </p>
+                
+                <p data-aos="fade-right" data-aos-easing="ease-in-sine">
+                    When I'm not coding, you'll usually find me exploring new technologies, contributing to personal projects, or keeping up with the latest developments in software engineering. Feel free to explore my portfolio to learn more about my work, and if you'd like to connect or collaborate, I'd love to hear from you.
+                </p>
+            </section>
 
             <p class="img-content">
-      <img class="img-logo" :src="images[0].src" @click="redirectToPage(images[0].link)" alt="Aber Image" />
-      <img class="img-logo" :src="images[1].src" @click="redirectToPage(images[1].link)" alt="CMR Image" />
-      <img class="img-logo" :src="images[2].src" @click="redirectToPage(images[2].link)" alt="RNR Image" />
-      <img class="img-logo" :src="images[3].src" @click="redirectToPage(images[3].link)" alt="NWS Image" />
-      <img class="img-logo" :src="images[4].src" @click="redirectToPage(images[4].link)" alt="Reach Image" />
-    </p>
-            </div>
+              <img class="img-logo" :src="images[0].src" @click="redirectToPage(images[0].link)" alt="Aber Image" />
+              <img class="img-logo" :src="images[1].src" @click="redirectToPage(images[1].link)" alt="CMR Image" />
+              <img class="img-logo" :src="images[2].src" @click="redirectToPage(images[2].link)" alt="RNR Image" />
+              <img class="img-logo" :src="images[3].src" @click="redirectToPage(images[3].link)" alt="NWS Image" />
+              <img class="img-logo" :src="images[4].src" @click="redirectToPage(images[4].link)" alt="Reach Image" />
+            </p>
+        </div>
     </div>
 </template>
 <script>
@@ -50,7 +57,7 @@ export default {
         linear-gradient(to top,
         rgba(10, 12, 41, 0.9),
         rgba(10, 12, 41, 0.9)),
-        url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_background.jpg');
+        url('https://raw.githubusercontent.com/dabirrizvi/assets_for_portfolio/main/Background/dabir_new_bg.jpg');
 
     background-attachment: fixed;
     background-position: center;
