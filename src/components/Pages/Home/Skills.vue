@@ -16,7 +16,7 @@
 
     <div class="row container-fluid skills-container">
       <div
-        v-for="(column, columnIndex) in columns"
+        v-for="column in columns"
         :key="column.id"
         class="col-xxl-4 col-lg-4 col-sm-12 card"
       >
@@ -31,6 +31,7 @@
           class="swiper-container"
           role="region"
           :aria-labelledby="`${column.id}-heading`"
+          :aria-describedby="`${column.id}-status`"
           :aria-roledescription="`${column.heading} skills carousel`"
         >
           <kinesis-container>
@@ -62,49 +63,82 @@
                 :observer="true"
                 :observe-parents="true"
                 class="mySwiper"
+                @slideChange="handleSlideChange(column.id, $event)"
               >
                 <swiper-slide
                   v-for="(skill, skillIndex) in column.skills"
                   :key="skill.id"
                   role="group"
-                  :aria-roledescription="'slide'"
-                  :aria-label="`${skill.name}, skill ${skillIndex + 1} of ${column.skills.length}`"
+                  aria-roledescription="slide"
+                  :aria-label="
+                    `${skill.name}, skill ${skillIndex + 1} of ${column.skills.length}`
+                  "
                 >
                   <article
                     class="image-wrapper"
                     :style="{ backgroundColor: skill.color }"
                     :title="skill.name"
                     tabindex="0"
-                    :aria-label="skill.name"
+                    :aria-label="`${skill.name} skill card`"
                   >
-                    <img
-                      v-if="!skill.imageFailed"
-                      :src="skill.src"
-                      alt=""
-                      width="150"
-                      height="150"
-                      loading="lazy"
-                      decoding="async"
-                      class="skill-logo"
-                      @error="handleImageError(skill)"
-                    />
+                    <div class="logo-container">
+                      <img
+                        v-if="!skill.imageFailed"
+                        :src="skill.src"
+                        alt=""
+                        width="170"
+                        height="170"
+                        loading="lazy"
+                        decoding="async"
+                        class="skill-logo"
+                        :style="{
+                          transform: `scale(${skill.logoScale || 1})`,
+                        }"
+                        @error="handleImageError(skill)"
+                      />
 
-                    <span
-                      v-else
-                      class="skill-fallback"
-                      aria-hidden="true"
-                    >
-                      {{ skill.shortName || skill.name }}
-                    </span>
+                      <span
+                        v-else
+                        class="skill-fallback"
+                        aria-hidden="true"
+                      >
+                        {{ skill.shortName || skill.name }}
+                      </span>
+                    </div>
 
-                    <span class="skill-name">
-                      {{ skill.name }}
-                    </span>
+                    <div class="skill-label">
+                      <span class="skill-name">
+                        {{ skill.name }}
+                      </span>
+
+                      <span class="skill-position">
+                        Skill {{ skillIndex + 1 }} of {{ column.skills.length }}
+                      </span>
+                    </div>
                   </article>
                 </swiper-slide>
               </swiper>
             </kinesis-element>
           </kinesis-container>
+        </div>
+
+        <div
+          :id="`${column.id}-status`"
+          class="current-skill"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          <span class="current-skill-label">
+            Currently viewing
+          </span>
+
+          <strong class="current-skill-name">
+            {{ getCurrentSkill(column).name }}
+          </strong>
+
+          <span class="current-skill-count">
+            {{ getActiveIndex(column.id) + 1 }} of {{ column.skills.length }}
+          </span>
         </div>
       </div>
     </div>
@@ -146,6 +180,12 @@ export default {
         Pagination,
       ],
 
+      activeSlides: {
+        'programming-languages': 0,
+        'frontend-frameworks': 0,
+        'backend-databases-devops': 0,
+      },
+
       columns: [
         {
           id: 'programming-languages',
@@ -157,6 +197,7 @@ export default {
               shortName: 'PHP',
               src: `${assetsBaseUrl}/Lang/PHP.svg`,
               color: '#d9e2f2',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -165,6 +206,7 @@ export default {
               shortName: 'JS',
               src: `${assetsBaseUrl}/Lang/JS.svg`,
               color: '#ffe66d',
+              logoScale: 1.1,
               imageFailed: false,
             },
             {
@@ -173,6 +215,7 @@ export default {
               shortName: 'PY',
               src: `${assetsBaseUrl}/Lang/Python.svg`,
               color: '#cde8f6',
+              logoScale: 1.12,
               imageFailed: false,
             },
             {
@@ -181,6 +224,7 @@ export default {
               shortName: 'JAVA',
               src: `${assetsBaseUrl}/Lang/JAVA.svg`,
               color: '#f7d6bf',
+              logoScale: 1.15,
               imageFailed: false,
             },
           ],
@@ -196,6 +240,7 @@ export default {
               shortName: 'M2',
               src: `${assetsBaseUrl}/Soft/Magento.svg`,
               color: '#f7c8b4',
+              logoScale: 1.18,
               imageFailed: false,
             },
             {
@@ -204,6 +249,7 @@ export default {
               shortName: 'HYVÄ',
               src: `${assetsBaseUrl}/Soft/Hyva.svg`,
               color: '#d7f0df',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -212,6 +258,7 @@ export default {
               shortName: 'REACT',
               src: `${assetsBaseUrl}/Soft/React.svg`,
               color: '#c8ebf4',
+              logoScale: 1.18,
               imageFailed: false,
             },
             {
@@ -220,6 +267,7 @@ export default {
               shortName: 'VUE',
               src: `${assetsBaseUrl}/Soft/Vue.svg`,
               color: '#d9f0df',
+              logoScale: 1.18,
               imageFailed: false,
             },
             {
@@ -228,6 +276,7 @@ export default {
               shortName: 'ALPINE',
               src: `${assetsBaseUrl}/Soft/Alpine.svg`,
               color: '#d8e3f7',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -236,6 +285,7 @@ export default {
               shortName: 'TW',
               src: `${assetsBaseUrl}/Soft/Tailwind.svg`,
               color: '#cdeff5',
+              logoScale: 1.18,
               imageFailed: false,
             },
             {
@@ -244,6 +294,7 @@ export default {
               shortName: 'KO',
               src: `${assetsBaseUrl}/Soft/knockoutjs.svg`,
               color: '#e3d7f4',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -252,6 +303,7 @@ export default {
               shortName: 'HTML',
               src: `${assetsBaseUrl}/Soft/HTML.svg`,
               color: '#ffd2bd',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -260,6 +312,7 @@ export default {
               shortName: 'CSS',
               src: `${assetsBaseUrl}/Soft/CSS.svg`,
               color: '#cddff7',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -268,6 +321,7 @@ export default {
               shortName: 'BS',
               src: `${assetsBaseUrl}/Soft/Bootstrap.svg`,
               color: '#ddd1f2',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -276,6 +330,7 @@ export default {
               shortName: 'SASS',
               src: `${assetsBaseUrl}/Soft/Sass.svg`,
               color: '#f3d7e5',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -284,6 +339,7 @@ export default {
               shortName: 'jQ',
               src: `${assetsBaseUrl}/Soft/jQuery.svg`,
               color: '#d8e9f5',
+              logoScale: 1.15,
               imageFailed: false,
             },
           ],
@@ -299,6 +355,7 @@ export default {
               shortName: 'NODE',
               src: `${assetsBaseUrl}/Misc/nodejs-alt.svg`,
               color: '#d8efd8',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -307,6 +364,7 @@ export default {
               shortName: 'EXPRESS',
               src: `${assetsBaseUrl}/Misc/expressjs.svg`,
               color: '#e2e5e9',
+              logoScale: 1.12,
               imageFailed: false,
             },
             {
@@ -315,6 +373,7 @@ export default {
               shortName: 'PG',
               src: `${assetsBaseUrl}/Misc/POSTGRESQL.svg`,
               color: '#cdddea',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -323,6 +382,7 @@ export default {
               shortName: 'MONGO',
               src: `${assetsBaseUrl}/Misc/mongodb.svg`,
               color: '#d6edcf',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -331,6 +391,7 @@ export default {
               shortName: 'MYSQL',
               src: `${assetsBaseUrl}/Misc/mysql.svg`,
               color: '#f7e0ad',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -339,6 +400,7 @@ export default {
               shortName: 'ELASTIC',
               src: `${assetsBaseUrl}/Misc/Elasticsearch.svg`,
               color: '#f3e8ad',
+              logoScale: 1.12,
               imageFailed: false,
             },
             {
@@ -347,6 +409,7 @@ export default {
               shortName: 'REST',
               src: `${assetsBaseUrl}/Misc/REST.svg`,
               color: '#d7e3f4',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -355,6 +418,7 @@ export default {
               shortName: 'GQL',
               src: `${assetsBaseUrl}/Misc/GraphQL.svg`,
               color: '#f2d1e8',
+              logoScale: 1.16,
               imageFailed: false,
             },
             {
@@ -363,6 +427,7 @@ export default {
               shortName: 'DOCKER',
               src: `${assetsBaseUrl}/Misc/docker.svg`,
               color: '#cfe8f7',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -371,6 +436,7 @@ export default {
               shortName: 'GIT',
               src: `${assetsBaseUrl}/Misc/Git.svg`,
               color: '#f4d0c4',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -379,6 +445,7 @@ export default {
               shortName: 'CI/CD',
               src: `${assetsBaseUrl}/Misc/CICD.svg`,
               color: '#ddd9f5',
+              logoScale: 1.14,
               imageFailed: false,
             },
             {
@@ -387,6 +454,7 @@ export default {
               shortName: 'HYPERNODE',
               src: `${assetsBaseUrl}/Misc/Hypernode.svg`,
               color: '#cfe8dd',
+              logoScale: 1.12,
               imageFailed: false,
             },
             {
@@ -395,6 +463,7 @@ export default {
               shortName: 'GCP',
               src: `${assetsBaseUrl}/Misc/GCP.png`,
               color: '#f4e5bd',
+              logoScale: 1.12,
               imageFailed: false,
             },
             {
@@ -403,6 +472,7 @@ export default {
               shortName: 'JIRA',
               src: `${assetsBaseUrl}/Misc/Jira.svg`,
               color: '#d4e0f5',
+              logoScale: 1.15,
               imageFailed: false,
             },
             {
@@ -411,6 +481,7 @@ export default {
               shortName: 'AGILE',
               src: `${assetsBaseUrl}/Misc/Agile.svg`,
               color: '#e2dcf2',
+              logoScale: 1.14,
               imageFailed: false,
             },
           ],
@@ -422,6 +493,20 @@ export default {
   methods: {
     handleImageError(skill) {
       skill.imageFailed = true;
+    },
+
+    handleSlideChange(columnId, swiper) {
+      this.activeSlides[columnId] = swiper.realIndex;
+    },
+
+    getActiveIndex(columnId) {
+      return this.activeSlides[columnId] || 0;
+    },
+
+    getCurrentSkill(column) {
+      const activeIndex = this.getActiveIndex(column.id);
+
+      return column.skills[activeIndex] || column.skills[0];
     },
   },
 };
@@ -457,6 +542,7 @@ h2 {
 
 .skill-category-heading {
   min-height: 58px;
+  margin-bottom: 24px;
   color: #f8f9fa;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
@@ -473,8 +559,9 @@ h2,
 }
 
 .swiper {
-  width: 220px;
-  height: 320px;
+  width: 250px;
+  height: 360px;
+  padding: 0 4px 34px;
 }
 
 .swiper-slide {
@@ -482,17 +569,19 @@ h2,
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 2px solid #111820;
-  border-radius: 80px;
+  border: 3px solid #111820;
+  border-radius: 54px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 
 .image-wrapper {
   position: relative;
   display: flex;
-  width: 220px;
-  height: 320px;
+  width: 250px;
+  height: 326px;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   overflow: hidden;
   outline: none;
 }
@@ -502,60 +591,133 @@ h2,
   outline-offset: -8px;
 }
 
+.logo-container {
+  display: flex;
+  width: 100%;
+  min-height: 220px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 24px 12px;
+  overflow: hidden;
+}
+
 .skill-logo {
   display: block;
-  width: auto;
-  max-width: 78%;
-  height: auto;
-  max-height: 68%;
-  margin-bottom: 35px;
+  width: 82%;
+  max-width: 180px;
+  height: 82%;
+  max-height: 180px;
   object-fit: contain;
+  transform-origin: center;
 }
 
 .skill-fallback {
-  max-width: 185px;
-  margin-bottom: 35px;
-  padding: 20px;
+  max-width: 200px;
   color: #17212b;
   font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
   overflow-wrap: anywhere;
   text-align: center;
 }
 
-.skill-name {
-  position: absolute;
-  right: 15px;
-  bottom: 22px;
-  left: 15px;
-  padding: 9px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.45);
+.skill-label {
+  display: flex;
+  width: calc(100% - 28px);
+  min-height: 82px;
+  margin: 0 14px 16px;
+  padding: 11px 14px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.42);
   border-radius: 20px;
-  background-color: rgba(16, 24, 32, 0.92);
+  background-color: #111820;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  text-align: center;
+}
+
+.skill-name {
+  display: block;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 800;
   line-height: 1.2;
+}
+
+.skill-position {
+  display: block;
+  margin-top: 4px;
+  color: #dbe5ed;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.current-skill {
+  display: grid;
+  width: min(100%, 290px);
+  min-height: 96px;
+  margin: 24px auto 0;
+  padding: 14px 20px;
+  border: 1px solid rgba(255, 228, 196, 0.5);
+  border-radius: 14px;
+  background-color: #202d35;
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+
+.current-skill-label {
+  color: #d9e0e5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.current-skill-name {
+  margin: 3px 0;
+  color: #ffe4c4;
+  font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.current-skill-count {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 :deep(.swiper-button-prev),
 :deep(.swiper-button-next) {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   border: 2px solid #ffffff;
   border-radius: 50%;
   background-color: #17212b;
   color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+:deep(.swiper-button-prev) {
+  left: 5px;
+}
+
+:deep(.swiper-button-next) {
+  right: 5px;
 }
 
 :deep(.swiper-button-prev::after),
 :deep(.swiper-button-next::after) {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 :deep(.swiper-button-prev:focus-visible),
@@ -565,15 +727,19 @@ h2,
   outline-offset: 3px;
 }
 
+:deep(.swiper-pagination) {
+  bottom: 4px;
+}
+
 :deep(.swiper-pagination-bullet) {
-  width: 10px;
-  height: 10px;
-  background-color: #17212b;
-  opacity: 0.5;
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff;
+  opacity: 0.45;
 }
 
 :deep(.swiper-pagination-bullet-active) {
-  background-color: #050b36;
+  background-color: #ffe4c4;
   opacity: 1;
 }
 
@@ -589,19 +755,38 @@ h2,
     padding-left: 10px;
   }
 
-  .swiper,
+  .swiper {
+    width: 225px;
+    height: 340px;
+  }
+
   .image-wrapper {
-    width: 200px;
-    height: 290px;
+    width: 225px;
+    height: 306px;
+  }
+
+  .logo-container {
+    min-height: 200px;
+    padding: 24px 20px 10px;
+  }
+
+  .skill-logo {
+    width: 80%;
+    max-width: 160px;
+    height: 80%;
+    max-height: 160px;
+  }
+
+  .skill-name {
+    font-size: 1.15rem;
+  }
+
+  .skill-label {
+    min-height: 78px;
   }
 
   .card {
     padding: 30px 10px;
-  }
-
-  .skill-logo {
-    max-width: 74%;
-    max-height: 64%;
   }
 }
 
