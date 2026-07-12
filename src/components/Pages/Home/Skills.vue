@@ -314,16 +314,7 @@ export default {
               color: '#f3d7e5',
               logoScale: 1.15,
               imageFailed: false,
-            },
-            {
-              id: 'jquery',
-              name: 'jQuery',
-              shortName: 'jQ',
-              src: `${assetsBaseUrl}/Soft/jQuery.svg`,
-              color: '#d8e9f5',
-              logoScale: 1.15,
-              imageFailed: false,
-            },
+            }
           ],
         },
 
